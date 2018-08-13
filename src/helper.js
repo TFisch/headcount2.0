@@ -1,8 +1,15 @@
 export default class DistrictRepository {
   constructor(data) {
-    this.stats = data.reduce((refindedData, school) => {
-      console.log(school);
-      return refindedData;
-    }, []);
+    this.stats = this.removeDuplicates(data);
   }
+
+  removeDuplicates = data => {
+    return data.reduce((refinedData, stat) => {
+      if (!refinedData[stat.Location]) {
+        refinedData[stat.Location] = {};
+      }
+      refinedData[stat.Location][stat.TimeFrame] = stat.Data;
+      return refinedData;
+    }, {});
+  };
 }
