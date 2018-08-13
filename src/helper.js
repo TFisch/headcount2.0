@@ -12,4 +12,8 @@ export default class DistrictRepository {
       return refinedData;
     }, {});
   };
+
+  findByName = search => {
+    // if (!search) return;
+  };
 }
