@@ -11,15 +11,17 @@
   margin: .85em;
   padding-bottom: 1em;
   text-align: center;
-  width: 11em;
+  width: 13em;
 }
 
 .location-header {
   color: #05386B;
+  font-size: .91em;
+  margin: 0;
 }
 
 .yearStats {
   color: #05386B;
-  font-size: .95em;
+  font-size: 79%;
   margin: auto 0;
 }
