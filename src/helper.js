@@ -35,6 +35,13 @@ export default class DistrictRepository {
     if (!search) {
       totalMatches = statKeys.map(key => this.stats[key]);
     }
+    let upCase = search.toUpperCase();
+    const matchy = statKeys.filter(key => this.stats[key].location === upCase);
+    console.log(matchy);
+
+    if (this.stats[upCase]) {
+    }
+
     return totalMatches;
   };
 }
