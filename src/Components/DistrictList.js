@@ -2,7 +2,7 @@ import React from 'react';
 import '../styling/DistrictList.css';
 
 const DistrictList = () => {
-  return <div>"hi"</div>;
+  return <div className="district-list">PlaceHolder</div>;
 };
 
 export default DistrictList;
