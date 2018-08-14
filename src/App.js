@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <DistrictList />
+        <DistrictList districts={this.state.districts} />
       </div>
     );
   }
