@@ -3,9 +3,8 @@ import '../styling/DistrictList.css';
 import DistrictCard from './DistrictCard';
 
 const DistrictList = ({ districts }) => {
-  const displayDistricts = districts.map(district => (
-    <DistrictCard {...district} />
-  ))
+  const displayDistricts = Object.keys(districts).map((district, i) => <DistrictCard location={district.location} stats={district.stats} key={i} />
+  );
 
   return <div className="district-list">PlaceHolder</div>;
 };
