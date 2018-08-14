@@ -28,4 +28,6 @@ export default class DistrictRepository {
       return undefined;
     }
   };
+
+  findAllMatches = search => {};
 }
