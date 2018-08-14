@@ -1,0 +1,9 @@
+.district-card {
+  border: 1px solid black;
+  width: 10em;
+}
+
+.yearStats {
+  font-size: .85em;
+  margin: auto 0;
+}
