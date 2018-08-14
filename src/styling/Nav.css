@@ -1,0 +1,8 @@
+.nav{
+  background-color: #05386B;
+  display: flex;
+  color: #EDF5E1;
+  font-family: 'Alegreya SC', serif;
+  height: 5em;
+  width: 100%;
+}
