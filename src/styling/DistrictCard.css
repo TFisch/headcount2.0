@@ -22,6 +22,14 @@
 
 .yearStats {
   color: #05386B;
-  font-size: 79%;
+  font-size: .75rem;
   margin: auto 0;
+}
+
+.lowStats {
+  color: #747474;
+  font-size: .75rem;
+  margin: auto 0;
+
+
 }
