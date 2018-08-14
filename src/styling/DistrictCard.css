@@ -1,9 +1,23 @@
 .district-card {
-  border: 1px solid black;
-  width: 10em;
+  background-color: #5CDB95;
+  border: 2px solid #05386B;
+  position:relative;
+  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+          box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+
+  margin: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  width: 11em;
+}
+
+.location-header {
+  color: #05386B;
 }
 
 .yearStats {
+  color: #05386B;
   font-size: .85em;
   margin: auto 0;
 }
