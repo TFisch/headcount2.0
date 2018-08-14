@@ -2,7 +2,7 @@
   background-color: #5CDB95;
   border: 2px solid #05386B;
   font-family: 'Alegreya SC', serif;
-  height: 12em;
+  height: 15em;
   position:relative;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
@@ -11,25 +11,26 @@
   margin: .85em;
   padding-bottom: 1em;
   text-align: center;
-  width: 13em;
+  width: 14em;
 }
 
 .location-header {
   color: #05386B;
-  font-size: .91em;
+  font-size: .95em;
   margin: 0;
+  padding-bottom: .5em;
 }
 
 .yearStats {
   color: #05386B;
-  font-size: .75rem;
+  font-size: .95rem;
+  font-weight: 500;
   margin: auto 0;
 }
 
 .lowStats {
   color: #747474;
-  font-size: .75rem;
+  font-size: .95rem;
+  font-weight: 500;
   margin: auto 0;
-
-
 }
