@@ -29,5 +29,12 @@ export default class DistrictRepository {
     }
   };
 
-  findAllMatches = search => {};
+  findAllMatches = search => {
+    const statKeys = Object.keys(this.stats);
+    let totalMatches = [];
+    if (!search) {
+      totalMatches = statKeys.map(key => this.stats[key]);
+    }
+    return totalMatches;
+  };
 }
