@@ -23,6 +23,7 @@ class App extends Component {
   render() {
     return (
       <div className="wrapper">
+        <Nav />
         <DistrictList districts={this.state.districts} />
       </div>
     );
