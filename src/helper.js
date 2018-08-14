@@ -34,14 +34,13 @@ export default class DistrictRepository {
     let totalMatches = [];
     if (!search) {
       totalMatches = statKeys.map(key => this.stats[key]);
+      return totalMatches;
     }
     let upCase = search.toUpperCase();
-    const matchy = statKeys.filter(key => this.stats[key].location === upCase);
-    console.log(matchy);
-
-    if (this.stats[upCase]) {
-    }
-
+    const match = statKeys.filter(key =>
+      this.stats[key].location.includes(upCase)
+    );
+    totalMatches = [...match];
     return totalMatches;
   };
 }
