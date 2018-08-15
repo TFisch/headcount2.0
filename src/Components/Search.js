@@ -33,7 +33,6 @@ export default class Search extends Component {
       }
       return match;
     }, {})
-    console.log(match);
     this.props.displaySearch(match);
   }
 

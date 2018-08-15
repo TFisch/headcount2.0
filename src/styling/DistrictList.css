@@ -2,8 +2,10 @@
   background-color: #5CDB95;
   display: flex;
   flex-wrap: wrap;
+  height: 100%;
   justify-content: center;
   margin: auto 0;
   padding: .5em;
   text-align: center;
 }
+

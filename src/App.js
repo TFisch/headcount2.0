@@ -13,13 +13,14 @@ class App extends Component {
     super()
 
     this.state = {
-      districts
+      districts,
+      searchEntered: false
     }
   }
 
 
   displaySearch = match => {
-    return null;
+    this.setState({ searchEntered: true, districts: match })
 
   }
 
@@ -27,7 +28,7 @@ class App extends Component {
     return (
       <div className="wrapper">
         <Nav displaySearch={this.displaySearch} />
-        <DistrictList districts={this.state.districts} />
+        <DistrictList districts={this.state.districts} searchEntered={this.state.searchEntered} />
       </div>
     );
   }
