@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import "../styling/Search.css"
 import kinderData from '../data/kindergartners_in_full_day_program';
 import DistrictRepository from '../helper';
-const districts = new DistrictRepository(kinderData);
 
 
 export default class Search extends Component {
@@ -24,8 +23,10 @@ export default class Search extends Component {
     this.setState({ searchInput })
   }
 
-  searchDistricts(district) {
-    console.log(district);
+  searchDistricts(districtEntry) {
+    const caseAdjust = districtEntry.toUpperCase();
+    const districtData = new DistrictRepository(kinderData);
+
   }
 
 
