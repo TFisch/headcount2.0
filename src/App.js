@@ -22,8 +22,6 @@ class App extends Component {
     const searchEntry = e.target.value;
     const filterMatches = this.state.districts.findAllMatches(searchEntry);
     this.setState({ filteredResults: filterMatches })
-    console.log(this.state.filteredResults)
-
   }
 
   render() {
