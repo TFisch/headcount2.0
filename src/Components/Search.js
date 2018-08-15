@@ -5,8 +5,8 @@ import DistrictRepository from '../helper';
 
 
 export default class Search extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
       searchInput: ""
     }
@@ -27,8 +27,8 @@ export default class Search extends Component {
     const caseAdjust = districtEntry.toUpperCase();
     const districtData = new DistrictRepository(kinderData);
     const districtKeys = Object.keys(districtData.stats);
-    const matches = districtKeys.filter(key => districtData.stats[key].location === caseAdjust)
-    console.log(matches)
+    const match = districtKeys.filter(key => districtData.stats[key].location === caseAdjust);
+    this.props.displaySearch(match);
   }
 
 

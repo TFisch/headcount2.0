@@ -18,12 +18,14 @@ class App extends Component {
   }
 
 
-
+  displaySearch = match => {
+    console.log(match)
+  }
 
   render() {
     return (
       <div className="wrapper">
-        <Nav />
+        <Nav displaySearch={this.displaySearch} />
         <DistrictList districts={this.state.districts} />
       </div>
     );
