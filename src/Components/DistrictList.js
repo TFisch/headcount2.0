@@ -5,7 +5,10 @@ import DistrictCard from './DistrictCard';
 
 
 const DistrictList = ({ districts, searchEntered }) => {
+
+  console.log(districts);
   if (searchEntered === false) {
+    return null;
     const displayDistricts = Object.keys(districts.stats).map((district, i) => {
       return (
         <DistrictCard location={districts.stats[district].location} stats={districts.stats[district].stats} key={i} />)
