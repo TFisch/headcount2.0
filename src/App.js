@@ -19,7 +19,8 @@ class App extends Component {
 
 
   displaySearch = match => {
-    console.log(match)
+    return null;
+
   }
 
   render() {
