@@ -19,8 +19,8 @@ class App extends Component {
   }
 
 
-  displaySearch = match => {
-    this.setState({ districts: match, searchEntered: true })
+  displaySearch = e => {
+    console.log(e.target.value);
   }
 
   render() {
