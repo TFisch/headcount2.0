@@ -14,7 +14,8 @@ export default class Search extends Component {
   }
 
   handleSubmit = (e) => {
-    console.log('hi')
+    e.preventDefault();
+    this.searchDistricts(this.state.searchInput);
   }
 
 
@@ -23,12 +24,18 @@ export default class Search extends Component {
     this.setState({ searchInput })
   }
 
+  searchDistricts(district) {
+    console.log(district);
+  }
+
+
   render() {
     return (
       <div className="search-wrap">
-        <input className="search-input" value={this.state.searchInput} onChange={this.handleChange} />
-        <button>Search</button>
-
+        <form onSubmit={this.handleSubmit}>
+          <input className="search-input" value={this.state.searchInput} onChange={this.handleChange} />
+          <button>Search</button>
+        </form>
       </div>
     )
 
