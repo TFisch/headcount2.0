@@ -4,22 +4,16 @@ import DistrictCard from './DistrictCard';
 
 
 
-const DistrictList = ({ districts, searchEntered }) => {
+const DistrictList = ({ districts }) => {
 
-  if (searchEntered === false) {
-    const displayDistricts = Object.keys(districts.stats).map((district, i) => {
-      return (
-        <DistrictCard location={districts.stats[district].location} stats={districts.stats[district].stats} key={i} />)
 
-    });
-    return <div className="district-list">{displayDistricts}</div>;
-  } else {
+  const displayDistricts = Object.keys(districts.stats).map((district, i) => {
     return (
-      <div className="district-list district-searched">
-        <DistrictCard location={districts.location} stats={districts.stats} />
-      </div>)
+      <DistrictCard location={districts.stats[district].location} stats={districts.stats[district].stats} key={i} />)
 
-  }
+  });
+  return <div className="district-list">{displayDistricts}</div>;
+
 };
 
 export default DistrictList;

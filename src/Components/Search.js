@@ -24,16 +24,10 @@ export default class Search extends Component {
   }
 
   searchDistricts(districtEntry) {
-    const caseAdjust = districtEntry.toUpperCase();
     const districtData = new DistrictRepository(kinderData);
-    const districtKeys = Object.keys(districtData.stats);
-    const match = districtKeys.reduce((match, key) => {
-      if (districtData.stats[key].location === caseAdjust) {
-        match = districtData.stats[key]
-      }
-      return match;
-    }, {})
-    this.props.displaySearch(match);
+    this.props.displaySearch((districtData.findByName(districtEntry)));
+
+
   }
 
 

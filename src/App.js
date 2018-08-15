@@ -14,13 +14,13 @@ class App extends Component {
 
     this.state = {
       districts,
-      searchEntered: false
+
     }
   }
 
 
   displaySearch = match => {
-    this.setState({ searchEntered: true, districts: match })
+    console.log(match)
 
   }
 
@@ -28,7 +28,7 @@ class App extends Component {
     return (
       <div className="wrapper">
         <Nav displaySearch={this.displaySearch} />
-        <DistrictList districts={this.state.districts} searchEntered={this.state.searchEntered} />
+        <DistrictList districts={this.state.districts} />
       </div>
     );
   }
