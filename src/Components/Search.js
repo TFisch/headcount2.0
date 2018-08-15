@@ -21,14 +21,15 @@ export default class Search extends Component {
   handleChange = (e) => {
     const searchInput = e.target.value;
     this.setState({ searchInput })
+    this.props.filterDistricts((districtData.findAllMatches(this.state.searchInput)))
   }
 
   searchDistricts(districtEntry) {
     const districtData = new DistrictRepository(kinderData);
     this.props.displaySearch((districtData.findByName(districtEntry)));
-
-
   }
+
+
 
 
   render() {
