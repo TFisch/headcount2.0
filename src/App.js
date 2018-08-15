@@ -27,7 +27,7 @@ class App extends Component {
     return (
       <div className="wrapper">
         <Nav displaySearch={this.displaySearch} />
-        <DistrictList districts={this.state.districts} searchEntered={this.searchEntered} />
+        <DistrictList districts={this.state.districts} searchEntered={this.state.searchEntered} />
       </div>
     );
   }
