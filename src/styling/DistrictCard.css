@@ -15,21 +15,24 @@
 }
 
 .location-header {
-  color: #05386B;
-  font-size: .91em;
+  background-color:#05386B;
+  color: #5CDB95;
+  font-size: 1.1em;
   margin: 0;
 }
 
 .yearStats {
   color: #05386B;
-  font-size: .99rem;
+  font-size: 1rem;
   margin: auto 0;
 }
 
 .lowStats {
   color: #747474;
-  font-size: .99gitrem;
+  font-size: 1rem;
   margin: auto 0;
+}
 
-
+.stats-wrap {
+  padding: 1em;
 }
