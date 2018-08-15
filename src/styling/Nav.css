@@ -1,8 +1,14 @@
-.nav{
+.logo {
+  margin-left: 1em;
+}
+
+.nav {
+  align-items: center;
   background-color: #05386B;
   display: flex;
   color: #EDF5E1;
   font-family: 'Alegreya SC', serif;
+  justify-content: space-between;
   height: 5em;
   width: 100%;
 }

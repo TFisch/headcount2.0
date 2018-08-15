@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import "../styling/Search.css"
 
 
 export default class Search extends Component {
@@ -14,7 +15,6 @@ export default class Search extends Component {
       <div className="search-wrap">
         <input className="search-input" />
         <button>Search</button>
-
 
       </div>
     )

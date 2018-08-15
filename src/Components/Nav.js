@@ -5,7 +5,7 @@ import Search from '../Components/Search'
 
 const Nav = () => {
   return <div className="nav">
-    <h3>HeadCount 2.0</h3>
+    <h3 className="logo">HeadCount 2.0</h3>
     <Search />
   </div>
 }
