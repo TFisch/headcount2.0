@@ -14,7 +14,7 @@ const DistrictList = ({ districts, searchEntered }) => {
     return <div className="district-list">{displayDistricts}</div>;
   } else {
 
-    return <div className="search-list">
+    return <div className="district-list district-searched">
       <DistrictCard location={districts.location} stats={districts.stats} />
     </div>
   }
