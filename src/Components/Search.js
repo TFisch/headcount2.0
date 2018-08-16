@@ -1,5 +1,7 @@
 import React from 'react';
 import "../styling/Search.css"
+import PropTypes from 'prop-types'
+
 
 
 const Search = ({ displaySearch }) => {
@@ -10,5 +12,10 @@ const Search = ({ displaySearch }) => {
     </div>
   )
 }
+
+Search.propTypes = {
+  displaySearch: PropTypes.func
+}
+
 
 export default Search;
