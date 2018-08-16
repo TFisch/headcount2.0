@@ -12,7 +12,7 @@ class App extends Component {
     super();
     this.state = {
       districts,
-      compareCards =[],
+      compareCards: [],
       filteredDistricts: []
     };
   }
@@ -43,6 +43,7 @@ class App extends Component {
         <DistrictList
           districts={this.state.districts}
           filteredDistricts={this.state.filteredDistricts}
+          compareCards={this.state.compareCards}
         />
       </div>
     );
