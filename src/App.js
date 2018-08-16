@@ -13,6 +13,7 @@ class App extends Component {
     this.state = {
       districts,
       filteredDistricts: []
+
     };
   }
 
