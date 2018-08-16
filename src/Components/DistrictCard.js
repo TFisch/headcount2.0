@@ -6,7 +6,7 @@ class DistrictCard extends Component {
   constructor(props) {
     super(props)
     this.state = {
-
+      selected: false
     }
   }
 
