@@ -5,6 +5,9 @@ import '../styling/DistrictCard.css';
 class DistrictCard extends Component {
   constructor(props) {
     super(props)
+    this.state = {
+
+    }
   }
 
   render() {
