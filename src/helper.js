@@ -48,10 +48,19 @@ export default class DistrictRepository {
     const statKeys = Object.keys(this.stats);
     const findDistrict = statKeys.reduce((foundDistrict, key) => {
       if (this.stats[key].location === district) {
-        return Object.values(this.stats[key].stats);
+        const districtAvg = Object.values(this.stats[key].stats).reduce(
+          (statAverage, stat) => {
+            statAverage += stat;
+            statAverage =
+              statAverage / Object.values(this.stats[key].stats).length;
+            console.log(statAverage);
+            return statAverage;
+          },
+          0
+        );
       }
+
       return foundDistrict;
     }, 0);
-    console.log(findDistrict);
   };
 }
