@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import '../styling/DistrictCard.css';
 
-const DistrictCard = ({ location, stats }) => {
-  return (
-    <div className="district-card">
-      <h3 className="location-header">{location}</h3>
-      <div className="stats-wrap">
-        {Object.keys(stats).map(stat => (
-          <p className={stats[stat] < 0.5 ? 'lowStats' : 'yearStats'}>
-            {stat} : {stats[stat]}
-          </p>
-        ))}
+class DistrictCard extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <div className="district-card" >
+        <h3 className="location-header">{this.props.location}</h3>
+        <div className="stats-wrap">
+          {Object.keys(this.props.stats).map(stat => (
+            <p className={this.props.stats[stat] < 0.5 ? 'lowStats' : 'yearStats'}>
+              {stat} : {this.props.stats[stat]}
+            </p>
+          ))}
+        </div>
       </div>
-    </div>
-  );
+    )
+  }
 };
 
 DistrictCard.propTypes = {
