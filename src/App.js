@@ -12,8 +12,8 @@ class App extends Component {
     super();
     this.state = {
       districts,
+      compareCards =[],
       filteredDistricts: []
-
     };
   }
 

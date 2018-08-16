@@ -11,7 +11,8 @@ const DistrictList = ({ districts, filteredDistricts }) => {
 
   });
 
-  return < div className="district-list">
+  return
+  < div className="district-list">
     {filteredDisplay}
   </div >;
 };
