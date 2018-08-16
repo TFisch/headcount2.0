@@ -16,7 +16,8 @@ class App extends Component {
 
   displaySearch = e => {
     const searchEntry = e;
-    const filterMatches = this.state.districts.findAllMatches(searchEntry);
+    const districts = new DistrictRepository(kinderData);
+    const filterMatches = districts.findAllMatches(searchEntry);
     this.setState({ filteredResults: filterMatches });
   };
 
