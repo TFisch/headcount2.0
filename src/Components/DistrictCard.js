@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types'
 import "../styling/DistrictCard.css"
 
 const DistrictCard = ({ location, stats }) => {
@@ -10,6 +11,12 @@ const DistrictCard = ({ location, stats }) => {
   </div>
 
 }
+
+DistrictCard.propTypes = {
+  location: PropTypes.string,
+  stats: PropTypes.object
+}
+
 
 export default DistrictCard;
 
