@@ -3,31 +3,31 @@ import './App.css';
 import DistrictList from './Components/DistrictList';
 import DistrictRepository from './helper';
 import kinderData from './data/kindergartners_in_full_day_program.js';
-import Nav from './Components/Nav'
-
-
+import Nav from './Components/Nav';
 
 class App extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
       districts: new DistrictRepository(kinderData),
-      filteredResults: [],
-    }
+      filteredResults: []
+    };
   }
-
 
   displaySearch = e => {
-    const searchEntry = e.target.value;
+    const searchEntry = e;
     const filterMatches = this.state.districts.findAllMatches(searchEntry);
-    this.setState({ filteredResults: filterMatches })
-  }
+    this.setState({ filteredResults: filterMatches });
+  };
 
   render() {
     return (
       <div className="wrapper">
         <Nav displaySearch={this.displaySearch} />
-        <DistrictList districts={this.state.districts} filteredResults={this.state.filteredResults} />
+        <DistrictList
+          districts={this.state.districts}
+          filteredResults={this.state.filteredResults}
+        />
       </div>
     );
   }
