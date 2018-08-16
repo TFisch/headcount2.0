@@ -1,6 +1,6 @@
 import React from 'react';
-import "../styling/Search.css"
-import PropTypes from 'prop-types'
+import "../styling/Search.css";
+import PropTypes from 'prop-types';
 
 
 
