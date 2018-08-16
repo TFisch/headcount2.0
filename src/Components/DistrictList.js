@@ -4,7 +4,7 @@ import DistrictCard from './DistrictCard';
 
 
 
-const DistrictList = ({ districts, filteredResults, searchEntered }) => {
+const DistrictList = ({ districts, filteredResults }) => {
 
   const filteredDisplay = filteredResults.map(district => {
     return (

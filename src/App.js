@@ -13,7 +13,6 @@ class App extends Component {
     this.state = {
       districts: new DistrictRepository(kinderData),
       filteredResults: [],
-      searchEntered: false
     }
   }
 
@@ -28,7 +27,7 @@ class App extends Component {
     return (
       <div className="wrapper">
         <Nav displaySearch={this.displaySearch} />
-        <DistrictList districts={this.state.districts} searchEntered={this.state.searchEntered} filteredResults={this.state.filteredResults} />
+        <DistrictList districts={this.state.districts} filteredResults={this.state.filteredResults} />
       </div>
     );
   }
