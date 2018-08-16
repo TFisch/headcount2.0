@@ -10,14 +10,17 @@ class DistrictCard extends Component {
     }
   }
 
-  handleClick = e => {
-    console.log(e.target);
+  handleClick = () => {
+    let selected = this.state.selected;
+    selected = !selected;
+    this.setState({ selected });
+    console.log(selected);
   }
 
 
   render() {
     return (
-      <div className="district-card" onClick={this.handleClick}>
+      <div className="district-card" onClick={this.handleClick} selected={this.selected}>
         <h3 className="location-header">{this.props.location}</h3>
         <div className="stats-wrap">
           {Object.keys(this.props.stats).map((stat, index) => (
