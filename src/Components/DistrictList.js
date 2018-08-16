@@ -3,33 +3,17 @@ import '../styling/DistrictList.css';
 import DistrictCard from './DistrictCard';
 import PropTypes from 'prop-types';
 
-const DistrictList = ({ districts, filteredResults }) => {
-  const filteredDisplay = filteredResults.map((district, i) => {
-    return (
-      <DistrictCard
-        location={district}
-        stats={districts.stats[district].stats}
-        key={i}
-      />
-    );
+const DistrictList = ({ districts, filteredDistricts }) => {
+  const filteredDisplay = filteredDistricts.map((district, index) => {
+
+    return (<DistrictCard key={district.location} location={district.location} stats={district.stats} />)
+
+
   });
 
-  const displayAllDistricts = Object.keys(districts.stats).map(
-    (district, i) => {
-      return (
-        <DistrictCard
-          location={district}
-          stats={districts.stats[district].stats}
-          key={i}
-        />
-      );
-    }
-  );
-
-  if (filteredResults.length) {
-    return <div className="district-list filtered">{filteredDisplay}</div>;
-  }
-  return <div className="district-list">{displayAllDistricts}</div>;
+  return < div className="district-list">
+    {filteredDisplay}
+  </div >;
 };
 
 DistrictList.PropTypes = {

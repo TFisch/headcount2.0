@@ -4,30 +4,44 @@ import DistrictList from './Components/DistrictList';
 import DistrictRepository from './helper';
 import kinderData from './data/kindergartners_in_full_day_program.js';
 import Nav from './Components/Nav';
+const districts = new DistrictRepository(kinderData);
+
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      districts: new DistrictRepository(kinderData),
-      filteredResults: []
+      districts,
+      filteredDistricts: []
     };
   }
 
-  displaySearch = e => {
-    const searchEntry = e;
+
+  componentDidMount() {
+    this.populateList();
+  }
+
+  populateList() {
     const districts = new DistrictRepository(kinderData);
-    const filterMatches = districts.findAllMatches(searchEntry);
-    this.setState({ filteredResults: filterMatches });
+    const filteredStats = districts.findAllMatches();
+    this.setState({ filteredDistricts: filteredStats });
+  }
+
+
+  updateFilter = searchEntry => {
+    const districts = new DistrictRepository(kinderData);
+    const filteredDistricts = districts.findAllMatches(searchEntry);
+    this.setState({ filteredDistricts });
+
   };
 
   render() {
     return (
       <div className="wrapper">
-        <Nav displaySearch={this.displaySearch} />
+        <Nav updateFilter={this.updateFilter} />
         <DistrictList
           districts={this.state.districts}
-          filteredResults={this.state.filteredResults}
+          filteredDistricts={this.state.filteredDistricts}
         />
       </div>
     );

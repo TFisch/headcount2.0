@@ -11,7 +11,7 @@ class DistrictCard extends Component {
   }
 
   handleClick = e => {
-    console.log('hi');
+    console.log(e.target);
   }
 
 
@@ -20,8 +20,8 @@ class DistrictCard extends Component {
       <div className="district-card" onClick={this.handleClick}>
         <h3 className="location-header">{this.props.location}</h3>
         <div className="stats-wrap">
-          {Object.keys(this.props.stats).map(stat => (
-            <p className={this.props.stats[stat] < 0.5 ? 'lowStats' : 'yearStats'}>
+          {Object.keys(this.props.stats).map((stat, index) => (
+            <p key={index} className={this.props.stats[stat] < 0.5 ? 'lowStats' : 'yearStats'}>
               {stat} : {this.props.stats[stat]}
             </p>
           ))}

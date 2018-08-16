@@ -2,9 +2,9 @@ import React from 'react';
 import '../styling/Search.css';
 import PropTypes from 'prop-types';
 
-const Search = ({ displaySearch }) => {
+const Search = ({ updateFilter }) => {
   this.handleChange = e => {
-    displaySearch(e.target.value);
+    updateFilter(e.target.value);
   };
 
   return (

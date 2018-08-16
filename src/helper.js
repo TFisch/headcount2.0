@@ -37,11 +37,11 @@ export default class DistrictRepository {
       return totalMatches;
     }
     let upCase = search.toUpperCase();
-    const match = statKeys.filter(key =>
+    const matches = statKeys.filter(key =>
       this.stats[key].location.includes(upCase)
     );
-    totalMatches = [...match];
-    return totalMatches;
+    const matchObjs = matches.map(match => this.stats[match])
+    return matchObjs;
   };
 
   findAverage = districtEntry => {
