@@ -43,4 +43,15 @@ export default class DistrictRepository {
     totalMatches = [...match];
     return totalMatches;
   };
+
+  findAverage = district => {
+    const statKeys = Object.keys(this.stats);
+    const findDistrict = statKeys.reduce((foundDistrict, key) => {
+      if (this.stats[key].location === district) {
+        return Object.values(this.stats[key].stats);
+      }
+      return foundDistrict;
+    }, 0);
+    console.log(findDistrict);
+  };
 }
