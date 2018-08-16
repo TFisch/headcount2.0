@@ -29,8 +29,6 @@ export default class DistrictRepository {
     }
   };
 
-
-
   findAllMatches = search => {
     const statKeys = Object.keys(this.stats);
     let totalMatches = [];
