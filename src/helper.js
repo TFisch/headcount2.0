@@ -44,23 +44,12 @@ export default class DistrictRepository {
     return totalMatches;
   };
 
-  findAverage = district => {
-    const statKeys = Object.keys(this.stats);
-    const findDistrict = statKeys.reduce((foundDistrict, key) => {
-      if (this.stats[key].location === district) {
-        const districtAvg = Object.values(this.stats[key].stats).reduce(
-          (statAverage, stat) => {
-            statAverage += stat;
-            statAverage =
-              statAverage / Object.values(this.stats[key].stats).length;
-            console.log(statAverage);
-            return statAverage;
-          },
-          0
-        );
-      }
-
-      return foundDistrict;
-    }, 0);
+  findAverage = districtEntry => {
+    const districtValues = Object.values(this.stats[districtEntry].stats);
+    const districtAverage = districtValues.reduce((districtAccum, value) => {
+      districtAccum = districtAccum + value / districtValues.length
+      return districtAccum
+    }, 0)
+    return Math.round(districtAverage * 1000) / 1000;
   };
 }
