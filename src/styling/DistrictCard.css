@@ -40,3 +40,8 @@
   font-weight: 600; 
   padding: 1em;
 }
+
+.selected {
+  border: 2px solid rgb(214, 215, 216);
+
+}
