@@ -3,7 +3,7 @@ import '../styling/DistrictList.css';
 import DistrictCard from './DistrictCard';
 import PropTypes from 'prop-types';
 
-const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards }) => {
+const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, removeCompareCard }) => {
   const filteredDisplay = filteredDistricts.map((district) => {
     return (<DistrictCard
       key={district.location}
@@ -11,6 +11,7 @@ const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards }) => 
       stats={district.stats}
       retrieveCompare={retrieveCompare}
       comparedCards={comparedCards}
+      removeCompareCard={removeCompareCard}
     />)
   });
 
