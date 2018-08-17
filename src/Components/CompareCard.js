@@ -1,4 +1,5 @@
 import React from 'react';
+import "../styling/CompareCard.css";
 
 
 const CompareCard = ({ locationOne, locationTwo, foundAverages }) => {
