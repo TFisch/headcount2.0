@@ -14,3 +14,16 @@
   text-align: center;
   width: 15em;
 }
+
+.locationHeading {
+  background-color: #05386B;
+  color: #EDF5E1;
+  font-family: 'Alegreya SC', serif;
+  font-size: 1.1em;
+  margin: auto 0;
+  opacity: 0.89;
+}
+
+.headingTwo {
+  margin-top: 2.35em;
+}
