@@ -4,6 +4,7 @@ import DistrictList from './Components/DistrictList';
 import DistrictRepository from './helper';
 import kinderData from './data/kindergartners_in_full_day_program.js';
 import Nav from './Components/Nav';
+import { throws } from 'assert';
 const districts = new DistrictRepository(kinderData);
 
 
@@ -22,14 +23,11 @@ class App extends Component {
     this.populateList();
   }
 
-
-
   populateList() {
     const districts = new DistrictRepository(kinderData);
     const filteredStats = districts.findAllMatches();
     this.setState({ filteredDistricts: filteredStats });
   }
-
 
   updateFilter = searchEntry => {
     const districts = new DistrictRepository(kinderData);
@@ -43,6 +41,9 @@ class App extends Component {
     }
   }
 
+  removeCompareCard = (card) => {
+
+  }
 
 
   render() {
@@ -54,6 +55,7 @@ class App extends Component {
           filteredDistricts={this.state.filteredDistricts}
           retrieveCompare={this.retrieveCompare}
           comparedCards={this.state.comparedCards}
+          removeCompareCard={this.removeCompareCard}
         />
       </div>
     );
