@@ -3,8 +3,8 @@ import '../styling/DistrictList.css';
 import DistrictCard from './DistrictCard';
 import PropTypes from 'prop-types';
 
-const DistrictList = ({ districts, filteredDistricts, retrieveCompare, comparedCards }) => {
-  const filteredDisplay = filteredDistricts.map((district, index) => {
+const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards }) => {
+  const filteredDisplay = filteredDistricts.map((district) => {
     return (<DistrictCard
       key={district.location}
       location={district.location}
