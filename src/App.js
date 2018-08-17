@@ -22,10 +22,7 @@ class App extends Component {
     this.populateList();
   }
 
-  componentDidUpdate() {
-    console.log(this.state.comparedCards);
 
-  }
 
   populateList() {
     const districts = new DistrictRepository(kinderData);
@@ -56,6 +53,7 @@ class App extends Component {
           districts={this.state.districts}
           filteredDistricts={this.state.filteredDistricts}
           retrieveCompare={this.retrieveCompare}
+          comparedCards={this.state.comparedCards}
         />
       </div>
     );
