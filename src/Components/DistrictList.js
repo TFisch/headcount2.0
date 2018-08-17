@@ -13,17 +13,30 @@ const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, remov
       comparedCards={comparedCards}
       removeCompareCard={removeCompareCard}
     />)
-  });
+  })
 
-  // const compareTwoDistricts = compareCards.map(card => {
-  //   return null;
-  // })
+  const compareTwoDistricts = comparedCards.map(district => {
+    return (
+      <DistrictCard
+        key={district.location}
+        location={district.location}
+        stats={district.stats}
+        retrieveCompare={retrieveCompare}
+        comparedCards={comparedCards}
+        removeCompareCard={removeCompareCard}
+      />
+    )
+  })
 
   return (
-
-    <div className="district-list">
-      {filteredDisplay}
-    </div >
+    <div>
+      <div className="district-list">
+        {compareTwoDistricts}
+      </div >
+      <div className="district-list">
+        {filteredDisplay}
+      </div >
+    </div>
 
   )
 };

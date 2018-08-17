@@ -18,8 +18,8 @@ class DistrictCard extends Component {
       this.setState({ selected });
       this.props.retrieveCompare(this.props);
     }
-
   }
+
 
 
 
