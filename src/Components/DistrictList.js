@@ -15,7 +15,7 @@ const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, remov
     />)
   })
 
-  const compareTwoDistricts = comparedCards.map(district => {
+  const displayTwoDistricts = comparedCards.map(district => {
     return (
       <DistrictCard
         key={district.location}
@@ -31,7 +31,7 @@ const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, remov
   return (
     <div>
       <div className="district-list">
-        {compareTwoDistricts}
+        {displayTwoDistricts}
       </div >
       <div className="district-list">
         {filteredDisplay}

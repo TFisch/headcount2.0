@@ -23,6 +23,17 @@ class App extends Component {
     this.populateList();
   }
 
+  componentDidUpdate() {
+    if (this.state.comparedCards.length === 2) {
+      const locations = this.state.comparedCards.map(district => district.location);
+      let [one, two] = locations;
+      console.log(one);
+      console.log(two);
+      const districts = new DistrictRepository(kinderData);
+      // const filteredDistricts = districts.compareDistrictAverages();
+    }
+  }
+
   populateList() {
     const districts = new DistrictRepository(kinderData);
     const filteredStats = districts.findAllMatches();
@@ -40,6 +51,12 @@ class App extends Component {
       this.setState({ comparedCards: [...this.state.comparedCards, card] });
     }
   }
+
+  compareDistricts = () => {
+    console.log(this.state.comparedCards);
+
+  }
+
 
   removeCompareCard = (card) => {
 
