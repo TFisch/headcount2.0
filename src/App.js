@@ -43,9 +43,7 @@ class App extends Component {
 
   retrieveCompare = (card) => {
     this.setState({ comparedCards: [...this.state.comparedCards, card] });
-    // if (this.state.comparedCards.length === 2) {
-    //   this.findDistrictAverages();
-    // }
+
   }
 
   findDistrictAverages = () => {
