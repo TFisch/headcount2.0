@@ -14,7 +14,8 @@ class App extends Component {
     this.state = {
       districts,
       filteredDistricts: [],
-      comparedCards: []
+      comparedCards: [],
+      foundAverages: {}
     };
   }
 
@@ -23,14 +24,6 @@ class App extends Component {
     this.populateList();
   }
 
-  componentDidUpdate() {
-    if (this.state.comparedCards.length === 2) {
-      const locations = this.state.comparedCards.map(district => district.location);
-      let [districtOne, districtTwo] = locations;
-      const districts = new DistrictRepository(kinderData);
-      const filteredDistricts = districts.compareDistrictAverages(districtOne, districtTwo);
-    }
-  }
 
   populateList() {
     const districts = new DistrictRepository(kinderData);
@@ -45,14 +38,18 @@ class App extends Component {
   };
 
   retrieveCompare = (card) => {
-    if (this.state.comparedCards.length < 2) {
-      this.setState({ comparedCards: [...this.state.comparedCards, card] });
+    this.setState({ comparedCards: [...this.state.comparedCards, card] });
+    if (this.state.comparedCards.length === 2) {
+      this.findDistrictAverages();
     }
   }
 
-  compareDistricts = () => {
-    console.log(this.state.comparedCards);
-
+  findDistrictAverages = () => {
+    const locations = this.state.comparedCards.map(district => district.location);
+    let [districtOne, districtTwo] = locations;
+    const districts = new DistrictRepository(kinderData);
+    const foundAverages = districts.compareDistrictAverages(districtOne, districtTwo);
+    this.setState({ foundAverages });
   }
 
 
@@ -71,6 +68,7 @@ class App extends Component {
           retrieveCompare={this.retrieveCompare}
           comparedCards={this.state.comparedCards}
           removeCompareCard={this.removeCompareCard}
+          foundAverages={this.foundAverages}
         />
       </div>
     );
