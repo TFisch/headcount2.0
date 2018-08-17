@@ -10,10 +10,11 @@ class DistrictCard extends Component {
     }
   }
 
-  handleClick = (e) => {
+  handleClick = () => {
     let selected = this.state.selected;
     selected = !selected;
     this.setState({ selected });
+    this.props.retrieveCompare(this.props);
   }
 
 

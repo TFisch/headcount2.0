@@ -12,14 +12,19 @@ class App extends Component {
     super();
     this.state = {
       districts,
-      compareCards: [],
-      filteredDistricts: []
+      filteredDistricts: [],
+      comparedCards: []
     };
   }
 
 
   componentDidMount() {
     this.populateList();
+  }
+
+  componentDidUpdate() {
+    console.log(this.state.comparedCards);
+
   }
 
   populateList() {
@@ -33,8 +38,13 @@ class App extends Component {
     const districts = new DistrictRepository(kinderData);
     const filteredDistricts = districts.findAllMatches(searchEntry);
     this.setState({ filteredDistricts });
-
   };
+
+  retrieveCompare = (card) => {
+    this.setState({ comparedCards: [...this.state.comparedCards, card] });
+
+  }
+
 
   render() {
     return (
@@ -43,7 +53,7 @@ class App extends Component {
         <DistrictList
           districts={this.state.districts}
           filteredDistricts={this.state.filteredDistricts}
-          compareCards={this.state.compareCards}
+          retrieveCompare={this.retrieveCompare}
         />
       </div>
     );
