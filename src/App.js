@@ -57,9 +57,9 @@ class App extends Component {
 
   removeCompareCard = (cardSearch) => {
     console.log(this.state.comparedCards);
-    const comparedCards = this.state.comparedCards;
-    const goog = comparedCards.filter(card => card.location !== cardSearch);
-    console.log(goog, 'goog');
+    const currentComparedCards = this.state.comparedCards;
+    const comparedCards = currentComparedCards.filter(card => card.location !== cardSearch);
+    this.setState({ comparedCards, AveragesSearched: false });
   }
 
 
