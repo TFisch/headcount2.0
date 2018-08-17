@@ -60,4 +60,5 @@ export default class DistrictRepository {
     const average = Math.round(districtOneAverage / districtTwoAverage * 1000) / 1000;
     return { [districtOne.toUpperCase()]: districtOneAverage, [districtTwo.toUpperCase()]: districtTwoAverage, compared: average }
   }
+
 }
