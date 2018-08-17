@@ -11,7 +11,6 @@ class DistrictCard extends Component {
   }
 
   handleClick = () => {
-
     if (this.props.comparedCards.length < 2) {
       let selected = this.state.selected;
       selected = !selected;

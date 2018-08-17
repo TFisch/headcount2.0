@@ -4,14 +4,13 @@ import DistrictList from './Components/DistrictList';
 import DistrictRepository from './helper';
 import kinderData from './data/kindergartners_in_full_day_program.js';
 import Nav from './Components/Nav';
-const districts = new DistrictRepository(kinderData);
 
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      districts,
+      districts: new DistrictRepository(kinderData),
       filteredDistricts: [],
       comparedCards: [],
       foundAverages: {},
@@ -44,9 +43,9 @@ class App extends Component {
 
   retrieveCompare = (card) => {
     this.setState({ comparedCards: [...this.state.comparedCards, card] });
-    if (this.state.comparedCards.length === 2) {
-      this.findDistrictAverages();
-    }
+    // if (this.state.comparedCards.length === 2) {
+    //   this.findDistrictAverages();
+    // }
   }
 
   findDistrictAverages = () => {

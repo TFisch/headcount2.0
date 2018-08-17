@@ -29,7 +29,14 @@ const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, remov
     )
   })
 
+  if (comparedCards.length === 2) {
 
+    const locationOne = comparedCards[0];
+    const locationTwo = comparedCards[1];
+    return (
+      <CompareCard locationOne={locationOne} locationTwo={locationTwo} />
+    )
+  }
 
   return (
     <div>
