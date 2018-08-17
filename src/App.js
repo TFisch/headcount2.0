@@ -26,11 +26,9 @@ class App extends Component {
   componentDidUpdate() {
     if (this.state.comparedCards.length === 2) {
       const locations = this.state.comparedCards.map(district => district.location);
-      let [one, two] = locations;
-      console.log(one);
-      console.log(two);
+      let [districtOne, districtTwo] = locations;
       const districts = new DistrictRepository(kinderData);
-      // const filteredDistricts = districts.compareDistrictAverages();
+      const filteredDistricts = districts.compareDistrictAverages(districtOne, districtTwo);
     }
   }
 
