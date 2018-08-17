@@ -58,9 +58,9 @@ class App extends Component {
   }
 
 
-  removeCompareCard = (card) => {
+  // removeCompareCard = (card) => {
 
-  }
+  // }
 
 
   render() {
@@ -73,7 +73,7 @@ class App extends Component {
           retrieveCompare={this.retrieveCompare}
           comparedCards={this.state.comparedCards}
           removeCompareCard={this.removeCompareCard}
-          foundAverages={this.foundAverages}
+          foundAverages={this.state.foundAverages}
         />
       </div>
     );

@@ -2,6 +2,7 @@ import React from 'react';
 import '../styling/DistrictList.css';
 import DistrictCard from './DistrictCard';
 import PropTypes from 'prop-types';
+import CompareCard from './CompareCard';
 
 const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, removeCompareCard, foundAverages }) => {
   const filteredDisplay = filteredDistricts.map((district) => {
@@ -27,6 +28,8 @@ const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, remov
       />
     )
   })
+
+
 
   return (
     <div>
