@@ -55,9 +55,12 @@ class App extends Component {
   }
 
 
-  // removeCompareCard = (card) => {
-
-  // }
+  removeCompareCard = (cardSearch) => {
+    console.log(this.state.comparedCards);
+    const comparedCards = this.state.comparedCards;
+    const goog = comparedCards.filter(card => card.location !== cardSearch);
+    console.log(goog, 'goog');
+  }
 
 
   render() {

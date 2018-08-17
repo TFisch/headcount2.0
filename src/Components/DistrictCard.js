@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import '../styling/DistrictCard.css';
+import { runInThisContext } from 'vm';
 
 class DistrictCard extends Component {
   constructor(props) {
@@ -11,12 +12,21 @@ class DistrictCard extends Component {
   }
 
   handleClick = () => {
+    if (this.state.selected) {
+      let selected = this.state.selected;
+      selected = !selected;
+      this.setState({ selected });
+      this.props.removeCompareCard(this.props.location);
+    }
+
+
     if (this.props.comparedCards.length < 2) {
       let selected = this.state.selected;
       selected = !selected;
       this.setState({ selected });
       this.props.retrieveCompare(this.props);
     }
+
   }
 
 
