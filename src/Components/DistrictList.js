@@ -34,7 +34,7 @@ const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, remov
     const locationOne = comparedCards[0];
     const locationTwo = comparedCards[1];
     return (
-      <CompareCard locationOne={locationOne} locationTwo={locationTwo} />
+      <CompareCard locationOne={locationOne} locationTwo={locationTwo} foundAverages={foundAverages} />
     )
   }
 

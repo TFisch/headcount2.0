@@ -1,14 +1,12 @@
 import React from 'react';
 
 
-const CompareCard = ({ locationOne, locationTwo }) => {
-  console.log(locationOne.location);
+const CompareCard = ({ locationOne, locationTwo, foundAverages }) => {
 
   return (
-    <div>
-      <p>{locationOne.location}</p>
-      <p>{locationTwo.location}</p>
 
+    <div>
+      {Object.values(foundAverages).map(average => <p>{average}</p>)}
     </div>
   )
 }
