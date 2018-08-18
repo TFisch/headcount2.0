@@ -40,6 +40,7 @@ export default class DistrictRepository {
     const matches = statKeys.filter(key =>
       this.stats[key].location.includes(upCase)
     );
+
     const matchObjs = matches.map(match => this.stats[match])
     return matchObjs;
   };

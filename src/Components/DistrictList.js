@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import CompareCard from './CompareCard';
 
 const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, removeCompareCard, foundAverages }) => {
+
   const filteredDisplay = filteredDistricts.map((district) => {
     return (<DistrictCard
       key={district.location}

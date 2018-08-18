@@ -10,7 +10,6 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      districts: new DistrictRepository(kinderData),
       filteredDistricts: [],
       comparedCards: [],
       foundAverages: {},
@@ -43,7 +42,6 @@ class App extends Component {
 
   retrieveCompare = (card) => {
     this.setState({ comparedCards: [...this.state.comparedCards, card] });
-
   }
 
   findDistrictAverages = () => {
@@ -54,12 +52,13 @@ class App extends Component {
     this.setState({ foundAverages, AveragesSearched: true })
   }
 
-
   removeCompareCard = (cardSearch) => {
-    console.log(this.state.comparedCards);
     const currentComparedCards = this.state.comparedCards;
     const comparedCards = currentComparedCards.filter(card => card.location !== cardSearch);
     this.setState({ comparedCards, AveragesSearched: false });
+    if (currentComparedCards.length === 1) {
+      this.setState({ comparedCards: [] });
+    }
   }
 
 
@@ -68,7 +67,6 @@ class App extends Component {
       <div className="wrapper">
         <Nav updateFilter={this.updateFilter} />
         <DistrictList
-          districts={this.state.districts}
           filteredDistricts={this.state.filteredDistricts}
           retrieveCompare={this.retrieveCompare}
           comparedCards={this.state.comparedCards}
