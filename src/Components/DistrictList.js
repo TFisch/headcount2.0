@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import CompareCard from './CompareCard';
 
 const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, removeCompareCard, foundAverages }) => {
-
+  console.log(filteredDistricts);
   const filteredDisplay = filteredDistricts.map((district) => {
     return (<DistrictCard
       key={district.location}
@@ -54,14 +54,12 @@ const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, remov
 
   return (
     <div className="wrapper">
-      <div>
-        <div className="district-list">
-          {displayTwoDistricts}
-        </div >
-        <div className="district-list">
-          {filteredDisplay}
-        </div >
-      </div>
+      <div className="district-list">
+        {displayTwoDistricts}
+      </div >
+      <div className="district-list">
+        {filteredDisplay}
+      </div >
     </div>
   )
 };
