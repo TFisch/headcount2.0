@@ -17,12 +17,12 @@ class App extends Component {
     };
   }
 
-
   componentDidMount() {
     this.populateList();
   }
 
   componentDidUpdate() {
+
     if (this.state.comparedCards.length === 2 && !this.state.AveragesSearched) {
       this.findDistrictAverages();
     }
