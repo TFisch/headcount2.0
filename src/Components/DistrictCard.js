@@ -18,7 +18,6 @@ class DistrictCard extends Component {
       this.props.removeCompareCard(this.props.location);
     }
 
-
     if (this.props.comparedCards.length < 2) {
       let selected = this.state.selected;
       selected = !selected;
@@ -31,11 +30,6 @@ class DistrictCard extends Component {
     }
 
   }
-
-
-
-
-
 
   render() {
     return (
