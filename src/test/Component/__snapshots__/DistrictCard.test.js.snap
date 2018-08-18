@@ -1,0 +1,477 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DistrictCard should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DistrictCard
+    comparedCards={Array []}
+    location="location"
+    removeCompareCard={[Function]}
+    retrieveCompare={[Function]}
+    stats="stats"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3
+          className="location-header"
+>
+          location
+</h3>,
+        <div
+          className="stats-wrap"
+>
+          <p
+                    className="yearStats"
+          >
+                    0
+                     : 
+                    s
+          </p>
+          <p
+                    className="yearStats"
+          >
+                    1
+                     : 
+                    t
+          </p>
+          <p
+                    className="yearStats"
+          >
+                    2
+                     : 
+                    a
+          </p>
+          <p
+                    className="yearStats"
+          >
+                    3
+                     : 
+                    t
+          </p>
+          <p
+                    className="yearStats"
+          >
+                    4
+                     : 
+                    s
+          </p>
+</div>,
+      ],
+      "className": "district-card",
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "location",
+          "className": "location-header",
+        },
+        "ref": null,
+        "rendered": "location",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p
+              className="yearStats"
+>
+              0
+               : 
+              s
+</p>,
+            <p
+              className="yearStats"
+>
+              1
+               : 
+              t
+</p>,
+            <p
+              className="yearStats"
+>
+              2
+               : 
+              a
+</p>,
+            <p
+              className="yearStats"
+>
+              3
+               : 
+              t
+</p>,
+            <p
+              className="yearStats"
+>
+              4
+               : 
+              s
+</p>,
+          ],
+          "className": "stats-wrap",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "0",
+                " : ",
+                "s",
+              ],
+              "className": "yearStats",
+            },
+            "ref": null,
+            "rendered": Array [
+              "0",
+              " : ",
+              "s",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "1",
+                " : ",
+                "t",
+              ],
+              "className": "yearStats",
+            },
+            "ref": null,
+            "rendered": Array [
+              "1",
+              " : ",
+              "t",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "2",
+                " : ",
+                "a",
+              ],
+              "className": "yearStats",
+            },
+            "ref": null,
+            "rendered": Array [
+              "2",
+              " : ",
+              "a",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "3",
+                " : ",
+                "t",
+              ],
+              "className": "yearStats",
+            },
+            "ref": null,
+            "rendered": Array [
+              "3",
+              " : ",
+              "t",
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "4",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "4",
+                " : ",
+                "s",
+              ],
+              "className": "yearStats",
+            },
+            "ref": null,
+            "rendered": Array [
+              "4",
+              " : ",
+              "s",
+            ],
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3
+            className="location-header"
+>
+            location
+</h3>,
+          <div
+            className="stats-wrap"
+>
+            <p
+                        className="yearStats"
+            >
+                        0
+                         : 
+                        s
+            </p>
+            <p
+                        className="yearStats"
+            >
+                        1
+                         : 
+                        t
+            </p>
+            <p
+                        className="yearStats"
+            >
+                        2
+                         : 
+                        a
+            </p>
+            <p
+                        className="yearStats"
+            >
+                        3
+                         : 
+                        t
+            </p>
+            <p
+                        className="yearStats"
+            >
+                        4
+                         : 
+                        s
+            </p>
+</div>,
+        ],
+        "className": "district-card",
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "location",
+            "className": "location-header",
+          },
+          "ref": null,
+          "rendered": "location",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p
+                className="yearStats"
+>
+                0
+                 : 
+                s
+</p>,
+              <p
+                className="yearStats"
+>
+                1
+                 : 
+                t
+</p>,
+              <p
+                className="yearStats"
+>
+                2
+                 : 
+                a
+</p>,
+              <p
+                className="yearStats"
+>
+                3
+                 : 
+                t
+</p>,
+              <p
+                className="yearStats"
+>
+                4
+                 : 
+                s
+</p>,
+            ],
+            "className": "stats-wrap",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "0",
+                  " : ",
+                  "s",
+                ],
+                "className": "yearStats",
+              },
+              "ref": null,
+              "rendered": Array [
+                "0",
+                " : ",
+                "s",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "1",
+                  " : ",
+                  "t",
+                ],
+                "className": "yearStats",
+              },
+              "ref": null,
+              "rendered": Array [
+                "1",
+                " : ",
+                "t",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2",
+                  " : ",
+                  "a",
+                ],
+                "className": "yearStats",
+              },
+              "ref": null,
+              "rendered": Array [
+                "2",
+                " : ",
+                "a",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "3",
+                  " : ",
+                  "t",
+                ],
+                "className": "yearStats",
+              },
+              "ref": null,
+              "rendered": Array [
+                "3",
+                " : ",
+                "t",
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "4",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "4",
+                  " : ",
+                  "s",
+                ],
+                "className": "yearStats",
+              },
+              "ref": null,
+              "rendered": Array [
+                "4",
+                " : ",
+                "s",
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "prevContext": true,
+          },
+        },
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

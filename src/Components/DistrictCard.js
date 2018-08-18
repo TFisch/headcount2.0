@@ -50,7 +50,7 @@ class DistrictCard extends Component {
 
 DistrictCard.propTypes = {
   location: PropTypes.string,
-  stats: PropTypes.object
+  stats: PropTypes.string
 };
 
 export default DistrictCard;
