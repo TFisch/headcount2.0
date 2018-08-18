@@ -52,7 +52,6 @@ const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, remov
     )
   }
 
-
   return (
     <div className="wrapper">
       <div>
@@ -64,7 +63,6 @@ const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, remov
         </div >
       </div>
     </div>
-
   )
 };
 
