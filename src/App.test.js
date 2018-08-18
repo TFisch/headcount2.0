@@ -24,9 +24,12 @@ describe('App', () => {
     };
   })
 
-  it('should itialize with state set as an empty filteredDistricts array, an empty comparedCards array, an empty foundAverages object, and averagesSearched set to false', () => {
+  it('should intialize with state set as an empty filteredDistricts array, an empty comparedCards array, an empty foundAverages object, and averagesSearched set to false', () => {
 
-    expect(wrapper.state()).toEqual(mockState);
+    expect(wrapper.state().filteredDistricts.length).toEqual(181);
+    expect(wrapper.state().comparedCards).toEqual([]);
+    expect(wrapper.state().foundAverages).toEqual({});
+    expect(wrapper.state().averagesSearched).toEqual(false);
   })
 
   it('should add a card into the comparedCard array when it is clicked', () => {
@@ -35,11 +38,11 @@ describe('App', () => {
       stats: { 2004: 0.24, 2005: 0.278, 2006: 0.337, 2007: 0.395, 2008: 0.536, 2009: 0.598, 2010: 0.64, 2011: 0.672, 2012: 0.695, 2013: 0.703, 2014: 0.741 }
     }
 
-
     expect(wrapper.state()).toEqual(mockState);
     wrapper.instance().retrieveCompare(mockCard);
     expect(wrapper.state().comparedCards.length).toEqual(1);
-
   })
+
+  it('should ')
 
 })
