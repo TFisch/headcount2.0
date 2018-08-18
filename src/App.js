@@ -13,7 +13,7 @@ class App extends Component {
       filteredDistricts: [],
       comparedCards: [],
       foundAverages: {},
-      AveragesSearched: false
+      averagesSearched: false
     };
   }
 
@@ -22,8 +22,7 @@ class App extends Component {
   }
 
   componentDidUpdate() {
-
-    if (this.state.comparedCards.length === 2 && !this.state.AveragesSearched) {
+    if (this.state.comparedCards.length === 2 && !this.state.averagesSearched) {
       this.findDistrictAverages();
     }
   }
@@ -49,13 +48,13 @@ class App extends Component {
     let [districtOne, districtTwo] = locations;
     const districts = new DistrictRepository(kinderData);
     const foundAverages = districts.compareDistrictAverages(districtOne, districtTwo);
-    this.setState({ foundAverages, AveragesSearched: true })
+    this.setState({ foundAverages, averagesSearched: true })
   }
 
   removeCompareCard = (cardSearch) => {
     const currentComparedCards = this.state.comparedCards;
     const comparedCards = currentComparedCards.filter(card => card.location !== cardSearch);
-    this.setState({ comparedCards, AveragesSearched: false });
+    this.setState({ comparedCards, averagesSearched: false });
     if (currentComparedCards.length === 1) {
       this.setState({ comparedCards: [] });
     }
