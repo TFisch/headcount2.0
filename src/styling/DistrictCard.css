@@ -17,9 +17,8 @@
 
 .location-header {
   background-color:#05386B;
-  color: #EDF5E1;
+  color: rgba(237, 245, 225, 0.829);
   font-size: 1.1em;
-  opacity: 0.89;
   margin: 0;
 }
 
