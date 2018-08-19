@@ -1,29 +1,37 @@
-.compareCard {
-  background-color: #5CDB95;
-  border: 2px solid #05386B;
+.compare-card {
+  background-color: rgba(237, 245, 225, 0.829);
+  border: 2px solid rgb(214, 215, 216);
   cursor: pointer;
-  font-family: 'Alegreya SC', serif;
+  font-family: 'Cabin', sans-serif;
   height: 18em;
   position:relative;
   -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
      -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
           box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-
   margin: .85em;
   padding-bottom: 1em;
   text-align: center;
   width: 15em;
 }
 
-.locationHeading {
-  background-color: #05386B;
-  color: #EDF5E1;
-  font-family: 'Alegreya SC', serif;
-  font-size: 1.1em;
-  margin: auto 0;
-  opacity: 0.89;
+.data {
+  font-size: 1.2em;
 }
 
-.headingTwo {
-  margin-top: 2.35em;
+.location-heading {
+  background-color: #05386B;
+  border: 2px solid rgb(214, 215, 216);
+  color: rgb(46, 182, 107);
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.1em;
+  margin: auto 0;
 }
+
+.heading-two {
+  margin-top: 2em;
+}
+
+.compare-head {
+  color: rgba(247, 243, 49, 0.829);
+}
+
