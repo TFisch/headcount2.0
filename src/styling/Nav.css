@@ -12,7 +12,7 @@
 
 .logo {
   font-size: 2em;
-  padding-left: .5em;
+  padding-left: 0.5em;
 }
 
 .logo-icon {
@@ -21,13 +21,12 @@
 
 .nav {
   align-items: center;
-  background-color: #05386B;
+  background-color: #05386b;
   border-bottom: 4px solid rgba(237, 245, 225, 0.829);
   display: flex;
-  color: rgb(46, 182, 107);;
+  color: rgb(46, 182, 107);
   font-family: 'Cabin', sans-serif;
   justify-content: space-between;
   height: 5em;
-  text-shadow: 1px 1px rgba(237, 245, 225, 0.829);
   width: 100%;
 }

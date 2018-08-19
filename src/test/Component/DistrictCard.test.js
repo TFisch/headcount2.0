@@ -1,13 +1,16 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import DistrictCard from '../../Components/DistrictCard';
 
 describe('DistrictCard', () => {
   let wrapper;
+  let removeCompareCard;
+  let mockLocation = 'PARIS';
+  let mockStats = {
+    2004: 0.302
+  };
 
   beforeEach(() => {
-    removeCompareCard = jest.fn();
-
     wrapper = shallow(
       <DistrictCard
         key={'key'}
@@ -49,5 +52,13 @@ describe('DistrictCard', () => {
     wrapper.simulate('click');
 
     expect(wrapper.state()).toEqual(expectedChangeState);
+  });
+
+  it('should have a propert of low-stat if under 0.5 ', () => {
+    let wrapperMount = mount(
+      <DistrictCard location={mockLocation} stats={mockStats} />
+    );
+
+    expect(wrapper.find('div').every('p'));
   });
 });
