@@ -41,7 +41,7 @@ export default class DistrictRepository {
       this.stats[key].location.includes(upCase)
     );
 
-    const matchObjs = matches.map(match => this.stats[match])
+    const matchObjs = matches.map(match => this.stats[match]);
     return matchObjs;
   };
 
@@ -49,9 +49,9 @@ export default class DistrictRepository {
     const upCase = districtEntry.toUpperCase();
     const districtValues = Object.values(this.stats[upCase].stats);
     const districtAverage = districtValues.reduce((districtAccum, value) => {
-      districtAccum = districtAccum + value / districtValues.length
-      return districtAccum
-    }, 0)
+      districtAccum = districtAccum + value / districtValues.length;
+      return districtAccum;
+    }, 0);
     return Math.round(districtAverage * 1000) / 1000;
   };
 
@@ -59,7 +59,7 @@ export default class DistrictRepository {
     const districtOneAverage = this.findAverage(districtOne);
     const districtTwoAverage = this.findAverage(districtTwo);
     const average = Math.round(districtOneAverage / districtTwoAverage * 1000) / 1000;
-    return { [districtOne.toUpperCase()]: districtOneAverage, [districtTwo.toUpperCase()]: districtTwoAverage, compared: average }
+    return { [districtOne.toUpperCase()]: districtOneAverage, [districtTwo.toUpperCase()]: districtTwoAverage, compared: average };
   }
 
 }

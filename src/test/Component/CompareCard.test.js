@@ -9,9 +9,9 @@ describe('CompareCard', () => {
   beforeEach(() => {
     wrapper = shallow(<CompareCard locationOne={'locationOne'} locationTwo={'locationTwo'} foundAverages={jest.fn()}
     />);
-  })
+  });
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  })
-})
+  });
+});

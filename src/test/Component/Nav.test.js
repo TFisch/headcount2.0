@@ -9,5 +9,5 @@ describe('Nav', () => {
 
 
     expect(wrapper).toMatchSnapshot();
-  })
-})
+  });
+});

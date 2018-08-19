@@ -5,7 +5,6 @@ import DistrictRepository from './helper';
 import kinderData from './data/kindergartners_in_full_day_program.js';
 import Nav from './Components/Nav';
 
-
 class App extends Component {
   constructor() {
     super();
@@ -39,24 +38,31 @@ class App extends Component {
     this.setState({ filteredDistricts });
   };
 
-  retrieveCompare = (card) => {
+  retrieveCompare = card => {
     let comparedCards = [...this.state.comparedCards, card];
     this.setState({ comparedCards });
-  }
+  };
 
   findDistrictAverages = () => {
-    const locations = this.state.comparedCards.map(district => district.location);
+    const locations = this.state.comparedCards.map(
+      district => district.location
+    );
     let [districtOne, districtTwo] = locations;
     const districts = new DistrictRepository(kinderData);
-    const foundAverages = districts.compareDistrictAverages(districtOne, districtTwo);
-    this.setState({ foundAverages, averagesSearched: true })
-  }
+    const foundAverages = districts.compareDistrictAverages(
+      districtOne,
+      districtTwo
+    );
+    this.setState({ foundAverages, averagesSearched: true });
+  };
 
-  removeCompareCard = (cardSearch) => {
+  removeCompareCard = cardSearch => {
     const currentComparedCards = this.state.comparedCards;
-    const comparedCards = currentComparedCards.filter(card => card.location !== cardSearch);
+    const comparedCards = currentComparedCards.filter(
+      card => card.location !== cardSearch
+    );
     this.setState({ comparedCards, averagesSearched: false });
-  }
+  };
 
   render() {
     return (

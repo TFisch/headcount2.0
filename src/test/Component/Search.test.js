@@ -9,7 +9,7 @@ describe('Search', () => {
     let wrapper = shallow(<Search />);
 
     expect(wrapper).toMatchSnapshot();
-  })
+  });
 
   it('should call the updateFilter method on change', () => {
     let updateFilterMock = jest.fn();
@@ -18,5 +18,5 @@ describe('Search', () => {
     wrapper.find('.search-input').simulate('change');
 
     expect(wrapper.props().updateFilter).toHaveBeenCalled();
-  })
-})
+  });
+});

@@ -16,31 +16,31 @@ describe('DistrictCard', () => {
       retrieveCompare={jest.fn()}
       comparedCards={[]}
       removeCompareCard={jest.fn()} />);
-  })
+  });
 
 
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
-  })
+  });
 
   it('should change selected state to true when clicked once', () => {
     const mockState = {
       selected: true
-    }
+    };
 
     wrapper.simulate('click');
     expect(wrapper.state()).toEqual(mockState);
-  })
+  });
 
   it('should change selected state back to false when clicked a second time', () => {
     const expectedState = {
       selected: true
-    }
+    };
 
     const expectedChangeState = {
       selected: false
-    }
+    };
 
     wrapper.simulate('click');
 
@@ -51,7 +51,7 @@ describe('DistrictCard', () => {
     expect(wrapper.state()).toEqual(expectedChangeState);
 
 
-  })
+  });
 
 
 

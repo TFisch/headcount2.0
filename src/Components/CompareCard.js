@@ -15,7 +15,7 @@ const CompareCard = ({ locationOne, locationTwo, foundAverages }) => {
       <p className="location-heading heading-two">{locationTwo.location}</p>
       <p className="data">{averageKeys[1]}</p>
     </div >
-  )
-}
+  );
+};
 
 export default CompareCard;
