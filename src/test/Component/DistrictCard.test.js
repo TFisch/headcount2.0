@@ -4,7 +4,6 @@ import DistrictCard from '../../Components/DistrictCard';
 
 describe('DistrictCard', () => {
   let wrapper;
-  let removeCompareCard;
   let mockLocation = 'PARIS';
   let mockStats = {
     2004: 0.302

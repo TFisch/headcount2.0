@@ -1,6 +1,6 @@
 .district-card {
   background-color: rgba(237, 245, 225, 0.829);
-  border: 2px solid rgb(214, 215, 216);
+  border: 3px solid rgb(214, 215, 216);
   cursor: pointer;
   font-family: 'Cabin', sans-serif;
   height: 18em;
@@ -37,7 +37,7 @@
 }
 
 .selected {
-  border: 2px solid #05386b;
+  border: 3px solid #ddd01f;
 }
 
 .stats-wrap {
