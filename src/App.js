@@ -65,15 +65,16 @@ class App extends Component {
   };
 
   render() {
+    const { filteredDistricts, comparedCards, foundAverages } = this.state;
     return (
       <div className="wrapper">
         <Nav updateFilter={this.updateFilter} />
         <DistrictList
-          filteredDistricts={this.state.filteredDistricts}
+          filteredDistricts={filteredDistricts}
           retrieveCompare={this.retrieveCompare}
-          comparedCards={this.state.comparedCards}
+          comparedCards={comparedCards}
           removeCompareCard={this.removeCompareCard}
-          foundAverages={this.state.foundAverages}
+          foundAverages={foundAverages}
         />
       </div>
     );
