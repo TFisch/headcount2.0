@@ -6,5 +6,5 @@ This application is focused on Test Driven Development through the ultilization 
 
 
 
-![](images/screenshot-compare.svg)  
+![](/images/screenshot-compare.png)  
  
