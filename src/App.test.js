@@ -18,10 +18,9 @@ describe('App', () => {
       location: "SPACE",
       stats: { 2004: 0.24 }
     };
-
     mockCardTwo = {
-      location: "Paris",
-      stats: { 2004: 0 }
+      location: "SEATTLE",
+      stats: { 2004: 1, 2005: 1, 2006: 1, 2007: 1, 2008: 1, 2009: 1, 2010: 1, 2011: 1, 2012: 1, 2013: 1, 2014: 1 }
     };
 
   })
@@ -57,12 +56,12 @@ describe('App', () => {
     expect(wrapper.state().comparedCards.length).toEqual(0);
   })
 
-  // it('should find the district averages when two cards are entered to compare array', () => {
-  //   wrapper.instance().retrieveCompare(mockCardOne);
-  //   wrapper.setState({ comparedCards: mockCardOne });
+  it('should find the district averages when two cards are entered to compare array', () => {
+    wrapper.setState({ comparedCards: [mockCardTwo] });
 
-  // })
+  })
 
 
 
 })
+

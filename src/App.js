@@ -40,7 +40,8 @@ class App extends Component {
   };
 
   retrieveCompare = (card) => {
-    this.setState({ comparedCards: [...this.state.comparedCards, card] });
+    let comparedCards = [...this.state.comparedCards, card];
+    this.setState({ comparedCards });
   }
 
   findDistrictAverages = () => {
@@ -56,7 +57,6 @@ class App extends Component {
     const comparedCards = currentComparedCards.filter(card => card.location !== cardSearch);
     this.setState({ comparedCards, averagesSearched: false });
   }
-
 
   render() {
     return (
