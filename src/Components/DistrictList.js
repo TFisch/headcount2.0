@@ -66,8 +66,13 @@ const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, remov
 };
 
 DistrictList.PropTypes = {
-  district: PropTypes.object,
-  filteredResults: PropTypes.array
+  filteredDistricts: PropTypes.array,
+  retrieveCompare: PropTypes.func,
+  comparedCards: PropTypes.array,
+  removeCompareCard: PropTypes.func,
+  foundAverages: PropTypes.func
 };
 
 export default DistrictList;
+
+

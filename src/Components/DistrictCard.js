@@ -49,7 +49,10 @@ class DistrictCard extends Component {
 
 DistrictCard.propTypes = {
   location: PropTypes.string,
-  stats: PropTypes.string
+  stats: PropTypes.object,
+  retrieveCompare: PropTypes.func,
+  comparedCards: PropTypes.array,
+  removeCompareCard: PropTypes.func
 };
 
 export default DistrictCard;

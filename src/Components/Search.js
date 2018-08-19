@@ -3,19 +3,19 @@ import '../styling/Search.css';
 import PropTypes from 'prop-types';
 
 const Search = ({ updateFilter }) => {
-  this.handleChange = e => {
+  const handleChange = e => {
     updateFilter(e.target.value);
   };
 
   return (
     <div className="search-wrap">
-      <input className="search-input" placeholder="Search for a School District" onChange={this.handleChange} />
+      <input className="search-input" placeholder="Search for a School District" onChange={handleChange} />
     </div>
   );
 };
 
 Search.propTypes = {
-  displaySearch: PropTypes.func
+  updateFilter: PropTypes.func
 };
 
 export default Search;
