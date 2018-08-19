@@ -13,8 +13,8 @@ describe('App', () => {
 
   beforeEach(() => {
     wrapper = shallow(<App />);
-    districts = new DistrictRepository(kinderData);
-    filteredStats = districts.findAllMatches();
+    // districts = new DistrictRepository(kinderData);
+    // filteredStats = districts.findAllMatches();
 
     mockState = {
       filteredDistricts: filteredStats,
@@ -38,11 +38,22 @@ describe('App', () => {
       stats: { 2004: 0.24, 2005: 0.278, 2006: 0.337, 2007: 0.395, 2008: 0.536, 2009: 0.598, 2010: 0.64, 2011: 0.672, 2012: 0.695, 2013: 0.703, 2014: 0.741 }
     }
 
-    expect(wrapper.state()).toEqual(mockState);
+    expect(wrapper.state().comparedCards.length).toEqual(0);
     wrapper.instance().retrieveCompare(mockCard);
     expect(wrapper.state().comparedCards.length).toEqual(1);
   })
 
-  it('should ')
+  it('should update the filteredDistricts array based on the searchEntry', () => {
+    let mockSearchEntry = "Ag"
+
+    wrapper.instance().updateFilter(mockSearchEntry);
+    expect(wrapper.state().filteredDistricts.length).toEqual(4);
+  })
+
+  // it('should run populateList on page load', () => {
+  //   wrapper.instance().populateList();
+  //   expect(wrapper.state().filteredDistricts.length).toEqual(181);
+
+  // })
 
 })
