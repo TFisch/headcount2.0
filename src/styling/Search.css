@@ -1,3 +1,7 @@
 .search-wrap {
   margin-right: 6em;
 }
+
+.search-input {
+  width: 15em;
+}

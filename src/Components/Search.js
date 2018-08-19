@@ -9,7 +9,7 @@ const Search = ({ updateFilter }) => {
 
   return (
     <div className="search-wrap">
-      <input className="search-input" onChange={this.handleChange} />
+      <input className="search-input" placeholder="Search for a School District" onChange={this.handleChange} />
     </div>
   );
 };
