@@ -1,6 +1,18 @@
+.left-wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: auto 4em;
+  height: 5em;
+}
+
 .logo {
   font-size: 2em;
-  margin-left: 2em;
+  padding-left: .5em;
+}
+
+.logo-icon {
+  width: 2em;
 }
 
 .nav {
