@@ -12,11 +12,12 @@ const DistrictList = ({
   foundAverages
 }) => {
   const filteredDisplay = filteredDistricts.map(district => {
+    const { location, stats } = district;
     return (
       <DistrictCard
-        key={district.location}
-        location={district.location}
-        stats={district.stats}
+        key={location}
+        location={location}
+        stats={stats}
         retrieveCompare={retrieveCompare}
         comparedCards={comparedCards}
         removeCompareCard={removeCompareCard}
@@ -25,11 +26,12 @@ const DistrictList = ({
   });
 
   const displayTwoDistricts = comparedCards.map(district => {
+    const { location, stats } = district;
     return (
       <DistrictCard
-        key={district.location}
-        location={district.location}
-        stats={district.stats}
+        key={location}
+        location={location}
+        stats={stats}
         retrieveCompare={retrieveCompare}
         comparedCards={comparedCards}
         removeCompareCard={removeCompareCard}
