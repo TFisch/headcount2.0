@@ -1,4 +1,3 @@
-
 .district-list {
   background-color: rgb(46, 182, 107);
   display: flex;
@@ -6,7 +5,7 @@
   height: 80%;
   justify-content: center;
   margin: auto 0;
-  padding: .5em;
+  padding: 0.5em;
   text-align: center;
 }
 
@@ -18,6 +17,6 @@
   height: 100vh;
 }
 
-.top-row{
+.top-row {
   height: 20em;
 }

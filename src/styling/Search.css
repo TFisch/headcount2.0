@@ -1,9 +1,9 @@
-.search-wrap {
-  margin-right: 3.6em;
-}
-
 .search-input {
   font-family: 'Cabin', sans-serif;
   font-size: 1.1em;
   width: 15em;
+}
+
+.search-wrap {
+  margin-right: 3.6em;
 }

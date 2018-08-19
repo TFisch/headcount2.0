@@ -4,26 +4,27 @@
   cursor: pointer;
   font-family: 'Cabin', sans-serif;
   height: 18em;
-  position:relative;
-  -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-     -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-          box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-
-  margin: .85em;
+  position: relative;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  margin: 0.85em;
   padding-bottom: 1em;
   text-align: center;
   width: 15em;
 }
 
 .location-header {
-  background-color:#05386B;
+  background-color: #05386b;
   color: rgb(46, 182, 107);
   font-size: 1.1em;
   margin: 0;
 }
 
 .yearStats {
-  color: #05386B;
+  color: #05386b;
   font-size: 1rem;
   margin: auto 0;
 }
@@ -35,11 +36,11 @@
   margin: auto 0;
 }
 
-.stats-wrap {
-  font-weight: 600; 
-  padding: 1em;
+.selected {
+  border: 2px solid #05386b;
 }
 
-.selected {
-  border: 2px solid #05386B;
+.stats-wrap {
+  font-weight: 600;
+  padding: 1em;
 }
