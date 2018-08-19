@@ -34,7 +34,6 @@ const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, remov
     const locationOne = comparedCards[0];
     const locationTwo = comparedCards[1];
 
-
     return (
       <div className="wrapper">
         <div>
