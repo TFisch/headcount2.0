@@ -11,10 +11,9 @@ describe('Search', () => {
 
   it('should call the updateFilter method on change', () => {
     let updateFilterMock = jest.fn();
-    let wrapper = mount(<Search />);
-    const mockEvent = { target: { value: 'as' } }
-    wrapper.instance().handleChange()
-
+    let wrapper = mount(<Search updateFilter={updateFilterMock} />);
+    wrapper.find('.search-input').simulate('change');
+    expect(wrapper.props().updateFilter).toHaveBeenCalled();
 
 
   })

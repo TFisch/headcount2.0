@@ -1,6 +1,8 @@
 import React from 'react';
 import "../styling/Nav.css"
 import Search from '../Components/Search'
+import PropTypes from 'prop-types';
+
 
 
 const Nav = ({ updateFilter }) => {
@@ -11,3 +13,7 @@ const Nav = ({ updateFilter }) => {
 }
 
 export default Nav;
+
+Nav.propTypes = {
+  updateFilter: PropTypes.func,
+}
