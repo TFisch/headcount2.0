@@ -4,7 +4,6 @@ import App from './App';
 import { shallow, mount } from 'enzyme';
 import kinderData from './data/kindergartners_in_full_day_program.js';
 import DistrictRepository from './helper';
-import { wrap } from 'module';
 
 describe('App', () => {
   let wrapper;

@@ -1,0 +1,277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CompareCard should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CompareCard
+    foundAverages={[Function]}
+    locationOne="locationOne"
+    locationTwo="locationTwo"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <p
+          className="locationHeading"
+/>,
+        <p
+          className="data"
+>
+          true
+</p>,
+        <h4
+          className="locationHeading headingTwo"
+>
+          Compare
+</h4>,
+        <p
+          className="data"
+>
+          Object {
+                    "calls": Array [],
+                    "instances": Array [],
+                  }
+</p>,
+        <p
+          className="locationHeading headingTwo"
+/>,
+        <p
+          className="data"
+>
+          [Function]
+</p>,
+      ],
+      "className": "compareCard",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "className": "locationHeading",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": true,
+          "className": "data",
+        },
+        "ref": null,
+        "rendered": true,
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Compare",
+          "className": "locationHeading headingTwo",
+        },
+        "ref": null,
+        "rendered": "Compare",
+        "type": "h4",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Object {
+            "calls": Array [],
+            "instances": Array [],
+          },
+          "className": "data",
+        },
+        "ref": null,
+        "rendered": Object {
+          "calls": Array [],
+          "instances": Array [],
+        },
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+          "className": "locationHeading headingTwo",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": [Function],
+          "className": "data",
+        },
+        "ref": null,
+        "rendered": [Function],
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p
+            className="locationHeading"
+/>,
+          <p
+            className="data"
+>
+            true
+</p>,
+          <h4
+            className="locationHeading headingTwo"
+>
+            Compare
+</h4>,
+          <p
+            className="data"
+>
+            Object {
+                        "calls": Array [],
+                        "instances": Array [],
+                      }
+</p>,
+          <p
+            className="locationHeading headingTwo"
+/>,
+          <p
+            className="data"
+>
+            [Function]
+</p>,
+        ],
+        "className": "compareCard",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "locationHeading",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": true,
+            "className": "data",
+          },
+          "ref": null,
+          "rendered": true,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Compare",
+            "className": "locationHeading headingTwo",
+          },
+          "ref": null,
+          "rendered": "Compare",
+          "type": "h4",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Object {
+              "calls": Array [],
+              "instances": Array [],
+            },
+            "className": "data",
+          },
+          "ref": null,
+          "rendered": Object {
+            "calls": Array [],
+            "instances": Array [],
+          },
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+            "className": "locationHeading headingTwo",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": [Function],
+            "className": "data",
+          },
+          "ref": null,
+          "rendered": [Function],
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactFifteenAdapter {
+      "options": Object {
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "prevContext": true,
+          },
+        },
+        "supportPrevContextArgumentOfComponentDidUpdate": true,
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;
