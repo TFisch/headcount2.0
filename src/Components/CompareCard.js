@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styling/CompareCard.css';
+import PropTypes from 'prop-types';
 
 const CompareCard = ({ locationOne, locationTwo, foundAverages }) => {
-  console.log(locationOne);
   const averageKeys = Object.values(foundAverages);
 
   return (
@@ -15,6 +15,12 @@ const CompareCard = ({ locationOne, locationTwo, foundAverages }) => {
       <p className="data">{averageKeys[1]}</p>
     </div>
   );
+};
+
+Search.propTypes = {
+  locationOne: PropTypes.string,
+  locationTwo: PropTypes.string,
+  foundAverages: PropTypes.array
 };
 
 export default CompareCard;
