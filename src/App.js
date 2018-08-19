@@ -9,6 +9,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
+      defaultDistricts: new DistrictRepository(kinderData),
       filteredDistricts: [],
       comparedCards: [],
       foundAverages: {},
@@ -27,14 +28,14 @@ class App extends Component {
   }
 
   populateList() {
-    const districts = new DistrictRepository(kinderData);
-    const filteredStats = districts.findAllMatches();
+    const filteredStats = this.state.defaultDistricts.findAllMatches();
     this.setState({ filteredDistricts: filteredStats });
   }
 
   updateFilter = searchEntry => {
-    const districts = new DistrictRepository(kinderData);
-    const filteredDistricts = districts.findAllMatches(searchEntry);
+    const filteredDistricts = this.state.defaultDistricts.findAllMatches(
+      searchEntry
+    );
     this.setState({ filteredDistricts });
   };
 
@@ -48,8 +49,7 @@ class App extends Component {
       district => district.location
     );
     let [districtOne, districtTwo] = locations;
-    const districts = new DistrictRepository(kinderData);
-    const foundAverages = districts.compareDistrictAverages(
+    const foundAverages = this.state.defaultDistricts.compareDistrictAverages(
       districtOne,
       districtTwo
     );
