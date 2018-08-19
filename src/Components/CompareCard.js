@@ -17,7 +17,7 @@ const CompareCard = ({ locationOne, locationTwo, foundAverages }) => {
   );
 };
 
-Search.propTypes = {
+CompareCard.propTypes = {
   locationOne: PropTypes.string,
   locationTwo: PropTypes.string,
   foundAverages: PropTypes.array

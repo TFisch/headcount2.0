@@ -69,7 +69,7 @@ const DistrictList = ({
   );
 };
 
-DistrictList.PropTypes = {
+DistrictList.propTypes = {
   filteredDistricts: PropTypes.array,
   retrieveCompare: PropTypes.func,
   comparedCards: PropTypes.array,
