@@ -10,6 +10,7 @@ describe('App', () => {
   let filteredStats;
   let mockCardOne;
   let mockCardTwo;
+  let mockArray;
 
   beforeEach(() => {
     wrapper = shallow(<App />);
@@ -21,6 +22,17 @@ describe('App', () => {
       location: "SEATTLE",
       stats: { 2004: 1, 2005: 1, 2006: 1, 2007: 1, 2008: 1, 2009: 1, 2010: 1, 2011: 1, 2012: 1, 2013: 1, 2014: 1 }
     };
+
+    mockArray = [
+      {
+        locaton: "GERMANY",
+        stats: { 2004: 0.29, 2005: 0.238, 2006: 0.369 }
+      },
+      {
+        locaton: "FLORIDA",
+        stats: { 2004: 0.24, 2005: 0.278, 2006: 0.337 }
+      }
+    ]
 
   })
 
@@ -56,7 +68,8 @@ describe('App', () => {
   })
 
   it('should find the district averages when two cards are entered to compare array', () => {
-    wrapper.setState({ comparedCards: [mockCardTwo] });
+    wrapper.setState({ comparedCards: mockArray });
+    wrapper.instance().findDistrictAverages();
 
   })
 

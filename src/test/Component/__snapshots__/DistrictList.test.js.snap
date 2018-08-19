@@ -425,7 +425,7 @@ ShallowWrapper {
 }
 `;
 
-exports[`DistrictList should render the comparedCards when there are two in the compared array 1`] = `
+exports[`DistrictList should render the comparedCards and average card when there are two in the compared array 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <DistrictList

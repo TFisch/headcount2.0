@@ -24,7 +24,7 @@ describe('DistrictList', () => {
     expect(wrapper).toMatchSnapshot();
   })
 
-  it('should render the comparedCards when there are two in the compared array', () => {
+  it('should render the comparedCards and average card when there are two in the compared array', () => {
     let wrapper = shallow(<DistrictList filteredDistricts={mockArray} comparedCards={mockArray} retrieveCompare={mockFn} removeCompareCard={mockFn} foundAverages={{}} />);
     expect(wrapper).toMatchSnapshot();
 
