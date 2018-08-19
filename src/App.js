@@ -55,7 +55,6 @@ class App extends Component {
     const currentComparedCards = this.state.comparedCards;
     const comparedCards = currentComparedCards.filter(card => card.location !== cardSearch);
     this.setState({ comparedCards, averagesSearched: false });
-
   }
 
 

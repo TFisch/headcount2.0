@@ -4,28 +4,34 @@ import App from './App';
 import { shallow, mount } from 'enzyme';
 import kinderData from './data/kindergartners_in_full_day_program.js';
 import DistrictRepository from './helper';
+import { wrap } from 'module';
 
 describe('App', () => {
   let wrapper;
-  let districts;
   let filteredStats;
-  let mockState;
+  let mockCardOne;
+  let mockCardTwo;
 
   beforeEach(() => {
     wrapper = shallow(<App />);
-    // districts = new DistrictRepository(kinderData);
-    // filteredStats = districts.findAllMatches();
-
-    mockState = {
-      filteredDistricts: filteredStats,
-      comparedCards: [],
-      foundAverages: {},
-      averagesSearched: false
+    mockCardOne = {
+      location: "SPACE",
+      stats: { 2004: 0.24 }
     };
+
+    mockCardTwo = {
+      location: "Paris",
+      stats: { 2004: 0 }
+    };
+
   })
 
-  it('should intialize with state set as an empty filteredDistricts array, an empty comparedCards array, an empty foundAverages object, and averagesSearched set to false', () => {
+  it('should match the snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  })
 
+
+  it('should intialize with state set as an empty filteredDistricts array, an empty comparedCards array, an empty foundAverages object, and averagesSearched set to false', () => {
     expect(wrapper.state().filteredDistricts.length).toEqual(181);
     expect(wrapper.state().comparedCards).toEqual([]);
     expect(wrapper.state().foundAverages).toEqual({});
@@ -33,13 +39,8 @@ describe('App', () => {
   })
 
   it('should add a card into the comparedCard array when it is clicked', () => {
-    let mockCard = {
-      location: "SPACE",
-      stats: { 2004: 0.24, 2005: 0.278, 2006: 0.337, 2007: 0.395, 2008: 0.536, 2009: 0.598, 2010: 0.64, 2011: 0.672, 2012: 0.695, 2013: 0.703, 2014: 0.741 }
-    }
-
     expect(wrapper.state().comparedCards.length).toEqual(0);
-    wrapper.instance().retrieveCompare(mockCard);
+    wrapper.instance().retrieveCompare(mockCardOne);
     expect(wrapper.state().comparedCards.length).toEqual(1);
   })
 
@@ -50,10 +51,18 @@ describe('App', () => {
     expect(wrapper.state().filteredDistricts.length).toEqual(4);
   })
 
-  // it('should run populateList on page load', () => {
-  //   wrapper.instance().populateList();
-  //   expect(wrapper.state().filteredDistricts.length).toEqual(181);
+  it('should remove the selected card from the comparedCards state when selected', () => {
+    wrapper.instance().retrieveCompare(mockCardOne);
+    wrapper.instance().removeCompareCard("SPACE");
+    expect(wrapper.state().comparedCards.length).toEqual(0);
+  })
+
+  // it('should find the district averages when two cards are entered to compare array', () => {
+  //   wrapper.instance().retrieveCompare(mockCardOne);
+  //   wrapper.setState({ comparedCards: mockCardOne });
 
   // })
+
+
 
 })
