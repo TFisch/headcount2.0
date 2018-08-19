@@ -5,6 +5,7 @@ HeadCount 2.0 is a project designed to manipulate data and creating small, reusa
 This application is focused on Test Driven Development through the ultilization of Jest and Enzyme. It was initialized using the `create-react-app` boilerplate. Standing issues and further development notes can be found here.
 
 
+![on-page-load](src/images/screenshot-onload.png)  
 
-![](src/images/screenshot-compare.png)  
+![display-compare](src/images/screenshot-compare.png)  
  
