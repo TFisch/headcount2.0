@@ -1,10 +1,9 @@
 import React from 'react';
-import "../styling/CompareCard.css";
-
+import '../styling/CompareCard.css';
 
 const CompareCard = ({ locationOne, locationTwo, foundAverages }) => {
   console.log(locationOne);
-  const averageKeys = (Object.values((foundAverages)));
+  const averageKeys = Object.values(foundAverages);
 
   return (
     <div className="compare-card">
@@ -14,7 +13,7 @@ const CompareCard = ({ locationOne, locationTwo, foundAverages }) => {
       <p className="data">{averageKeys[2]}</p>
       <p className="location-heading heading-two">{locationTwo.location}</p>
       <p className="data">{averageKeys[1]}</p>
-    </div >
+    </div>
   );
 };
 

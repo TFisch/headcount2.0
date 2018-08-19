@@ -1,24 +1,24 @@
-import React from "react";
-import { shallow, mount } from 'enzyme';
+import React from 'react';
+import { shallow } from 'enzyme';
 import DistrictCard from '../../Components/DistrictCard';
 
 describe('DistrictCard', () => {
   let wrapper;
-  let removeCompareCard;
 
   beforeEach(() => {
     removeCompareCard = jest.fn();
 
-    wrapper = shallow(<DistrictCard
-      key={'key'}
-      location={'location'}
-      stats={'stats'}
-      retrieveCompare={jest.fn()}
-      comparedCards={[]}
-      removeCompareCard={jest.fn()} />);
+    wrapper = shallow(
+      <DistrictCard
+        key={'key'}
+        location={'location'}
+        stats={'stats'}
+        retrieveCompare={jest.fn()}
+        comparedCards={[]}
+        removeCompareCard={jest.fn()}
+      />
+    );
   });
-
-
 
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
@@ -49,13 +49,5 @@ describe('DistrictCard', () => {
     wrapper.simulate('click');
 
     expect(wrapper.state()).toEqual(expectedChangeState);
-
-
   });
-
-
-
-
-
 });
-
