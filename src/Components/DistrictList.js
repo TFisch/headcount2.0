@@ -37,7 +37,7 @@ const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, remov
     return (
       <div className="wrapper">
         <div>
-          <div className="district-list">
+          <div className="district-list top-row">
             {displayTwoDistricts[0]}
             <CompareCard locationOne={locationOne} locationTwo={locationTwo} foundAverages={foundAverages} />
             {displayTwoDistricts[1]}
@@ -53,7 +53,7 @@ const DistrictList = ({ filteredDistricts, retrieveCompare, comparedCards, remov
   return (
     <div className="wrapper">
       <div>
-        <div className="district-list">
+        <div className="district-list top-row">
           {displayTwoDistricts}
         </div >
         <div className="district-list">

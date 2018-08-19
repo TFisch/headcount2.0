@@ -10,6 +10,7 @@ const Nav = ({ updateFilter }) => {
       <img className="logo-icon" src={require('../images/grad.svg')} />
       <h3 className="logo">HeadCount 2.0</h3>
     </div>
+    <h4 className="instruct-text">Select From the List Below or Search For a Specific District</h4>
     <Search updateFilter={updateFilter} />
   </div>
 }

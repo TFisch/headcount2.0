@@ -1,8 +1,9 @@
+
 .district-list {
   background-color: rgb(46, 182, 107);
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
+  height: 80%;
   justify-content: center;
   margin: auto 0;
   padding: .5em;
@@ -15,4 +16,12 @@
 
 .filtered {
   height: 100vh;
+}
+
+.instruct-text {
+  font-size: 1.2em;
+}
+
+.top-row{
+  height: 20em;
 }

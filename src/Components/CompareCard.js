@@ -3,6 +3,7 @@ import "../styling/CompareCard.css";
 
 
 const CompareCard = ({ locationOne, locationTwo, foundAverages }) => {
+  console.log(locationOne);
   const averageKeys = (Object.values((foundAverages)));
 
   return (
