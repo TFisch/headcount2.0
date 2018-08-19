@@ -2,9 +2,7 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import Search from '../../Components/Search';
 
-
 describe('Search', () => {
-
   it('should match the snapshot', () => {
     let wrapper = shallow(<Search />);
 
