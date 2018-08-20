@@ -40,7 +40,6 @@ class App extends Component {
   };
 
   retrieveCompare = card => {
-    console.log(card);
     let comparedCards = [...this.state.comparedCards, card];
     this.setState({ comparedCards });
   };
