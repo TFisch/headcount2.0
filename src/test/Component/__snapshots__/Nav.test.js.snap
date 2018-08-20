@@ -17,11 +17,24 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h3
-          className="logo"
+        <div
+          className="left-wrapper"
 >
-          HeadCount 2.0
-</h3>,
+          <img
+                    className="logo-icon"
+                    src="grad.svg"
+          />
+          <h3
+                    className="logo"
+          >
+                    HeadCount 2.0
+          </h3>
+</div>,
+        <h4
+          className="instruct-text"
+>
+          Select From the List Below or Search For a Specific District
+</h4>,
         <Search
           updateFilter={undefined}
 />,
@@ -35,12 +48,59 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "HeadCount 2.0",
-          "className": "logo",
+          "children": Array [
+            <img
+              className="logo-icon"
+              src="grad.svg"
+/>,
+            <h3
+              className="logo"
+>
+              HeadCount 2.0
+</h3>,
+          ],
+          "className": "left-wrapper",
         },
         "ref": null,
-        "rendered": "HeadCount 2.0",
-        "type": "h3",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "logo-icon",
+              "src": "grad.svg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "HeadCount 2.0",
+              "className": "logo",
+            },
+            "ref": null,
+            "rendered": "HeadCount 2.0",
+            "type": "h3",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Select From the List Below or Search For a Specific District",
+          "className": "instruct-text",
+        },
+        "ref": null,
+        "rendered": "Select From the List Below or Search For a Specific District",
+        "type": "h4",
       },
       Object {
         "instance": null,
@@ -63,11 +123,24 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h3
-            className="logo"
+          <div
+            className="left-wrapper"
 >
-            HeadCount 2.0
-</h3>,
+            <img
+                        className="logo-icon"
+                        src="grad.svg"
+            />
+            <h3
+                        className="logo"
+            >
+                        HeadCount 2.0
+            </h3>
+</div>,
+          <h4
+            className="instruct-text"
+>
+            Select From the List Below or Search For a Specific District
+</h4>,
           <Search
             updateFilter={undefined}
 />,
@@ -81,12 +154,59 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "HeadCount 2.0",
-            "className": "logo",
+            "children": Array [
+              <img
+                className="logo-icon"
+                src="grad.svg"
+/>,
+              <h3
+                className="logo"
+>
+                HeadCount 2.0
+</h3>,
+            ],
+            "className": "left-wrapper",
           },
           "ref": null,
-          "rendered": "HeadCount 2.0",
-          "type": "h3",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "logo-icon",
+                "src": "grad.svg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "HeadCount 2.0",
+                "className": "logo",
+              },
+              "ref": null,
+              "rendered": "HeadCount 2.0",
+              "type": "h3",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Select From the List Below or Search For a Specific District",
+            "className": "instruct-text",
+          },
+          "ref": null,
+          "rendered": "Select From the List Below or Search For a Specific District",
+          "type": "h4",
         },
         Object {
           "instance": null,

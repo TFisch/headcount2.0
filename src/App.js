@@ -40,6 +40,7 @@ class App extends Component {
   };
 
   retrieveCompare = card => {
+    console.log(card);
     let comparedCards = [...this.state.comparedCards, card];
     this.setState({ comparedCards });
   };
@@ -71,10 +72,10 @@ class App extends Component {
         <Nav updateFilter={this.updateFilter} />
         <DistrictList
           filteredDistricts={filteredDistricts}
-          retrieveCompare={this.retrieveCompare}
           comparedCards={comparedCards}
-          removeCompareCard={this.removeCompareCard}
           foundAverages={foundAverages}
+          retrieveCompare={this.retrieveCompare}
+          removeCompareCard={this.removeCompareCard}
         />
       </div>
     );

@@ -4,10 +4,6 @@ import DistrictCard from '../../Components/DistrictCard';
 
 describe('DistrictCard', () => {
   let wrapper;
-  let mockLocation = 'PARIS';
-  let mockStats = {
-    2004: 0.302
-  };
 
   beforeEach(() => {
     wrapper = shallow(
@@ -51,13 +47,5 @@ describe('DistrictCard', () => {
     wrapper.simulate('click');
 
     expect(wrapper.state()).toEqual(expectedChangeState);
-  });
-
-  it('should have a propert of low-stat if under 0.5 ', () => {
-    let wrapperMount = mount(
-      <DistrictCard location={mockLocation} stats={mockStats} />
-    );
-
-    expect(wrapper.find('div').every('p'));
   });
 });

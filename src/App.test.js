@@ -43,8 +43,4 @@ describe('App', () => {
     wrapper.instance().removeCompareCard('SPACE');
     expect(wrapper.state().comparedCards.length).toEqual(0);
   });
-
-  it('should find the district averages when two cards are entered to compare array', () => {
-    wrapper.instance().findDistrictAverages();
-  });
 });

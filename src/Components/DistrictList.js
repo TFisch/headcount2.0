@@ -76,7 +76,7 @@ DistrictList.propTypes = {
   retrieveCompare: PropTypes.func,
   comparedCards: PropTypes.array,
   removeCompareCard: PropTypes.func,
-  foundAverages: PropTypes.func
+  foundAverages: PropTypes.object
 };
 
 export default DistrictList;

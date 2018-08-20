@@ -22,7 +22,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <p
-          className="locationHeading"
+          className="location-heading"
 />,
         <p
           className="data"
@@ -30,9 +30,9 @@ ShallowWrapper {
           true
 </p>,
         <h4
-          className="locationHeading headingTwo"
+          className="location-heading heading-two compare-head"
 >
-          Compare
+          COMPARE
 </h4>,
         <p
           className="data"
@@ -43,7 +43,7 @@ ShallowWrapper {
                   }
 </p>,
         <p
-          className="locationHeading headingTwo"
+          className="location-heading heading-two"
 />,
         <p
           className="data"
@@ -51,7 +51,7 @@ ShallowWrapper {
           [Function]
 </p>,
       ],
-      "className": "compareCard",
+      "className": "compare-card",
     },
     "ref": null,
     "rendered": Array [
@@ -61,7 +61,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": undefined,
-          "className": "locationHeading",
+          "className": "location-heading",
         },
         "ref": null,
         "rendered": null,
@@ -84,11 +84,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Compare",
-          "className": "locationHeading headingTwo",
+          "children": "COMPARE",
+          "className": "location-heading heading-two compare-head",
         },
         "ref": null,
-        "rendered": "Compare",
+        "rendered": "COMPARE",
         "type": "h4",
       },
       Object {
@@ -115,7 +115,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": undefined,
-          "className": "locationHeading headingTwo",
+          "className": "location-heading heading-two",
         },
         "ref": null,
         "rendered": null,
@@ -144,7 +144,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <p
-            className="locationHeading"
+            className="location-heading"
 />,
           <p
             className="data"
@@ -152,9 +152,9 @@ ShallowWrapper {
             true
 </p>,
           <h4
-            className="locationHeading headingTwo"
+            className="location-heading heading-two compare-head"
 >
-            Compare
+            COMPARE
 </h4>,
           <p
             className="data"
@@ -165,7 +165,7 @@ ShallowWrapper {
                       }
 </p>,
           <p
-            className="locationHeading headingTwo"
+            className="location-heading heading-two"
 />,
           <p
             className="data"
@@ -173,7 +173,7 @@ ShallowWrapper {
             [Function]
 </p>,
         ],
-        "className": "compareCard",
+        "className": "compare-card",
       },
       "ref": null,
       "rendered": Array [
@@ -183,7 +183,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": undefined,
-            "className": "locationHeading",
+            "className": "location-heading",
           },
           "ref": null,
           "rendered": null,
@@ -206,11 +206,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Compare",
-            "className": "locationHeading headingTwo",
+            "children": "COMPARE",
+            "className": "location-heading heading-two compare-head",
           },
           "ref": null,
-          "rendered": "Compare",
+          "rendered": "COMPARE",
           "type": "h4",
         },
         Object {
@@ -237,7 +237,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": undefined,
-            "className": "locationHeading headingTwo",
+            "className": "location-heading heading-two",
           },
           "ref": null,
           "rendered": null,
