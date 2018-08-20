@@ -41,11 +41,42 @@ describe('DistrictCard', () => {
     };
 
     wrapper.simulate('click');
-
     expect(wrapper.state()).toEqual(expectedState);
-
     wrapper.simulate('click');
-
     expect(wrapper.state()).toEqual(expectedChangeState);
+  });
+
+  it('should have a list item with a class of lowStats if under .5', () => {
+    const lowMockStats = { 2004: 0.3 };
+    let wrapper = mount(
+      <DistrictCard
+        key={'key'}
+        location={'Paris'}
+        stats={lowMockStats}
+        retrieveCompare={jest.fn()}
+        comparedCards={[]}
+        removeCompareCard={jest.fn()}
+      />
+    );
+
+    expect(wrapper.find('.stats-wrap').children().hasClass('lowStats')).toEqual(true);
+
+  });
+
+  it('should have a list item with a class of yearStats if over .5', () => {
+    const lowMockStats = { 2004: 0.6 };
+    let wrapper = mount(
+      <DistrictCard
+        key={'key'}
+        location={'Paris'}
+        stats={lowMockStats}
+        retrieveCompare={jest.fn()}
+        comparedCards={[]}
+        removeCompareCard={jest.fn()}
+      />
+    );
+
+    expect(wrapper.find('.stats-wrap').children().hasClass('yearStats')).toEqual(true);
+
   });
 });

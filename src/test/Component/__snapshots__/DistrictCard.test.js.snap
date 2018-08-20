@@ -28,45 +28,45 @@ ShallowWrapper {
 >
           location
 </h3>,
-        <div
+        <ul
           className="stats-wrap"
 >
-          <p
+          <li
                     className="yearStats"
           >
                     0
                      : 
                     s
-          </p>
-          <p
+          </li>
+          <li
                     className="yearStats"
           >
                     1
                      : 
                     t
-          </p>
-          <p
+          </li>
+          <li
                     className="yearStats"
           >
                     2
                      : 
                     a
-          </p>
-          <p
+          </li>
+          <li
                     className="yearStats"
           >
                     3
                      : 
                     t
-          </p>
-          <p
+          </li>
+          <li
                     className="yearStats"
           >
                     4
                      : 
                     s
-          </p>
-</div>,
+          </li>
+</ul>,
       ],
       "className": "district-card",
       "onClick": [Function],
@@ -91,41 +91,41 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <p
+            <li
               className="yearStats"
 >
               0
                : 
               s
-</p>,
-            <p
+</li>,
+            <li
               className="yearStats"
 >
               1
                : 
               t
-</p>,
-            <p
+</li>,
+            <li
               className="yearStats"
 >
               2
                : 
               a
-</p>,
-            <p
+</li>,
+            <li
               className="yearStats"
 >
               3
                : 
               t
-</p>,
-            <p
+</li>,
+            <li
               className="yearStats"
 >
               4
                : 
               s
-</p>,
+</li>,
           ],
           "className": "stats-wrap",
         },
@@ -149,7 +149,7 @@ ShallowWrapper {
               " : ",
               "s",
             ],
-            "type": "p",
+            "type": "li",
           },
           Object {
             "instance": null,
@@ -169,7 +169,7 @@ ShallowWrapper {
               " : ",
               "t",
             ],
-            "type": "p",
+            "type": "li",
           },
           Object {
             "instance": null,
@@ -189,7 +189,7 @@ ShallowWrapper {
               " : ",
               "a",
             ],
-            "type": "p",
+            "type": "li",
           },
           Object {
             "instance": null,
@@ -209,7 +209,7 @@ ShallowWrapper {
               " : ",
               "t",
             ],
-            "type": "p",
+            "type": "li",
           },
           Object {
             "instance": null,
@@ -229,10 +229,10 @@ ShallowWrapper {
               " : ",
               "s",
             ],
-            "type": "p",
+            "type": "li",
           },
         ],
-        "type": "div",
+        "type": "ul",
       },
     ],
     "type": "div",
@@ -249,45 +249,45 @@ ShallowWrapper {
 >
             location
 </h3>,
-          <div
+          <ul
             className="stats-wrap"
 >
-            <p
+            <li
                         className="yearStats"
             >
                         0
                          : 
                         s
-            </p>
-            <p
+            </li>
+            <li
                         className="yearStats"
             >
                         1
                          : 
                         t
-            </p>
-            <p
+            </li>
+            <li
                         className="yearStats"
             >
                         2
                          : 
                         a
-            </p>
-            <p
+            </li>
+            <li
                         className="yearStats"
             >
                         3
                          : 
                         t
-            </p>
-            <p
+            </li>
+            <li
                         className="yearStats"
             >
                         4
                          : 
                         s
-            </p>
-</div>,
+            </li>
+</ul>,
         ],
         "className": "district-card",
         "onClick": [Function],
@@ -312,41 +312,41 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <p
+              <li
                 className="yearStats"
 >
                 0
                  : 
                 s
-</p>,
-              <p
+</li>,
+              <li
                 className="yearStats"
 >
                 1
                  : 
                 t
-</p>,
-              <p
+</li>,
+              <li
                 className="yearStats"
 >
                 2
                  : 
                 a
-</p>,
-              <p
+</li>,
+              <li
                 className="yearStats"
 >
                 3
                  : 
                 t
-</p>,
-              <p
+</li>,
+              <li
                 className="yearStats"
 >
                 4
                  : 
                 s
-</p>,
+</li>,
             ],
             "className": "stats-wrap",
           },
@@ -370,7 +370,7 @@ ShallowWrapper {
                 " : ",
                 "s",
               ],
-              "type": "p",
+              "type": "li",
             },
             Object {
               "instance": null,
@@ -390,7 +390,7 @@ ShallowWrapper {
                 " : ",
                 "t",
               ],
-              "type": "p",
+              "type": "li",
             },
             Object {
               "instance": null,
@@ -410,7 +410,7 @@ ShallowWrapper {
                 " : ",
                 "a",
               ],
-              "type": "p",
+              "type": "li",
             },
             Object {
               "instance": null,
@@ -430,7 +430,7 @@ ShallowWrapper {
                 " : ",
                 "t",
               ],
-              "type": "p",
+              "type": "li",
             },
             Object {
               "instance": null,
@@ -450,10 +450,10 @@ ShallowWrapper {
                 " : ",
                 "s",
               ],
-              "type": "p",
+              "type": "li",
             },
           ],
-          "type": "div",
+          "type": "ul",
         },
       ],
       "type": "div",

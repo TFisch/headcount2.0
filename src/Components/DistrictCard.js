@@ -39,18 +39,18 @@ class DistrictCard extends Component {
         onClick={this.handleClick}
       >
         <h3 className="location-header">{this.props.location}</h3>
-        <div className="stats-wrap">
+        <ul className="stats-wrap">
           {Object.keys(this.props.stats).map((stat, index) => (
-            <p
+            <li
               key={index}
               className={
                 this.props.stats[stat] < 0.5 ? 'lowStats' : 'yearStats'
               }
             >
               {stat} : {this.props.stats[stat]}
-            </p>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     );
   }

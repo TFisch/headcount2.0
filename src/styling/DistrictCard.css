@@ -26,6 +26,7 @@
 .yearStats {
   color: #05386b;
   font-size: 1rem;
+  list-style: none;
   margin: auto 0;
 }
 
@@ -33,6 +34,7 @@
   color: #a7a5a5;
   font-size: 1rem;
   font-weight: 600;
+  list-style: none;
   margin: auto 0;
 }
 
