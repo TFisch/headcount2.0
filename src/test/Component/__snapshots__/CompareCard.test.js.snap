@@ -32,7 +32,7 @@ ShallowWrapper {
         <h4
           className="location-heading heading-two compare-head"
 >
-          COMPARE
+          DISTRICTS COMPARED
 </h4>,
         <p
           className="data"
@@ -84,11 +84,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "COMPARE",
+          "children": "DISTRICTS COMPARED",
           "className": "location-heading heading-two compare-head",
         },
         "ref": null,
-        "rendered": "COMPARE",
+        "rendered": "DISTRICTS COMPARED",
         "type": "h4",
       },
       Object {
@@ -154,7 +154,7 @@ ShallowWrapper {
           <h4
             className="location-heading heading-two compare-head"
 >
-            COMPARE
+            DISTRICTS COMPARED
 </h4>,
           <p
             className="data"
@@ -206,11 +206,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "COMPARE",
+            "children": "DISTRICTS COMPARED",
             "className": "location-heading heading-two compare-head",
           },
           "ref": null,
-          "rendered": "COMPARE",
+          "rendered": "DISTRICTS COMPARED",
           "type": "h4",
         },
         Object {

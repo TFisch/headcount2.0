@@ -9,7 +9,7 @@ const CompareCard = ({ locationOne, locationTwo, foundAverages }) => {
     <div className="compare-card">
       <p className="location-heading">{locationOne.location}</p>
       <p className="data">{averageKeys[0]}</p>
-      <h4 className="location-heading heading-two compare-head">COMPARE</h4>
+      <h4 className="location-heading heading-two compare-head">DISTRICTS COMPARED</h4>
       <p className="data">{averageKeys[2]}</p>
       <p className="location-heading heading-two">{locationTwo.location}</p>
       <p className="data">{averageKeys[1]}</p>
